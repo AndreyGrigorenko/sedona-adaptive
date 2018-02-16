@@ -1,1 +1,1 @@
-# sedona-adaptive-
+# адаптивный сайт - sedona-adaptive
