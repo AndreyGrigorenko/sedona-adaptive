@@ -10,7 +10,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', function() {
-	gulp.src('src/pug/pages/**.pug')
+	gulp.src('src/pug/pages/*.pug')
 		.pipe(plumber())
 		.pipe(pug({			
 			pretty: '\t',
@@ -33,10 +33,10 @@ gulp.task('sass', function() {
 gulp.task('server', function() {
 	browserSync.init({
 		open: false,
-    	notify: false,
+    	notify: false,		
 		server: {
-			baseDir: "./dist",
-		}
+			baseDir: './dist'			
+		}				
 	});
 });
 
@@ -47,7 +47,7 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task("default", function(fn) {
+gulp.task('default', function(fn) {
   run(
  	'pug',
     'server',
