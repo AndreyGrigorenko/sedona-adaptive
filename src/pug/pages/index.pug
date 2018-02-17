@@ -1,11 +1,31 @@
 doctype html
-html(lang='ru')
+html(lang="ru")
 	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
-		meta(name='viewport' content='width=device-width, initial-scale=1.0')
-		link(href="css/main.css" rel="stylesheet" )
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(href="css/main.css" rel="stylesheet")
 		title index.html
-
+		
 	body
-		h2 drdrdrede 
+		header.main-header
+			.main-header__logo
+				img(src="img/logo-sedona-mobile.svg" alt="logo")
+			.main-header__burger
+				img(src="img/icon-menu.svg" alt="icon-menu")
+			nav.main-header__menu
+				ul
+					li
+						a(href="index.html") Главная
+						.main-header__close
+							img(src="img/icon-cross.svg" alt="icon-cross")
+					li
+						a(href="media.html") Фото и видео
+					li
+						a(href="form.html") Форма отзыва
+					li
+						a(href="#") HTML academy
+		article.sedona
+			section.sedona__text
+				img(src="img/text-sedona-index.svg" alt="text-sedona")
+			
