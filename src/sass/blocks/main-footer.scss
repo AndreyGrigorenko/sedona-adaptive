@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+	.main-footer {
+		background: #ffffff;
+		&__visitsedona {
+			@include title-font2();
+		}
+	}
+}

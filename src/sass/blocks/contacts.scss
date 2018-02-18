@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+	.contacts {		
+		&__info-block {
+			background: #ffffff;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		&__title {
+			@include title-font2();
+		}
+		&__text {
+			@include main-font();
+			line-height: 1.7rem;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		&__btn {
+			@include title-font2();
+			width: 100%;
+			height: 60px;
+			background: $blue-color;
+			border: none;
+			color: #ffffff;			
+			margin-top: 20px;
+		}
+		&__map {
+			height: 350px;
+		}
+	}
+}

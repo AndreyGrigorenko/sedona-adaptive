@@ -23,3 +23,11 @@
 	color: #333333;
 	text-transform: uppercase;
 }
+
+@mixin title-font2() {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1.8rem;
+	text-align: center;
+	text-transform: uppercase;
+}
