@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+	.main-header {		
+		.central-block {
+			height: 55px;
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;			
+		}
+		&__logo {
+			position: absolute;
+			width: 101px;
+			top: 0;
+			left: 50%;
+			margin-left: -50.5px;
+			z-index: 10;			
+		}
+	}
+}

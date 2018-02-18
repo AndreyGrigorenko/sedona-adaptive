@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+	.sedona {
+		min-height: 389px;
+		background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top #E4F1F9;
+	.central-block {
+			height: 389px;
+			display: flex;		
+		}		
+		&__text {
+			width: 280px;
+			margin: auto;
+		}
+	}
+}
+

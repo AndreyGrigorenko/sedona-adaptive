@@ -3,11 +3,10 @@
 var gulp = require('gulp');
 var pug = require('gulp-pug');
 var plumber = require('gulp-plumber');
-var browserSync = require('browser-sync').create();
-var reload = browserSync.reload;
 var run = require('run-sequence');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
 gulp.task('pug', function() {
 	gulp.src('src/pug/pages/*.pug')
@@ -15,8 +14,7 @@ gulp.task('pug', function() {
 		.pipe(pug({			
 			pretty: '\t',
 		}))
-		.pipe(gulp.dest('dist'))
-		.pipe(reload({stream : true}));
+		.pipe(gulp.dest('dist'));		
 });
 
 gulp.task('sass', function() {
@@ -26,14 +24,12 @@ gulp.task('sass', function() {
 		.pipe(autoprefixer({
 			browsers : ['last 2 versions']			
 		}))		
-		.pipe(gulp.dest('dist/css/'))
-		.pipe(reload({stream : true}));
+		.pipe(gulp.dest('dist/css/'));		
 });
 
 gulp.task('server', function() {
 	browserSync.init({
-		open: false,
-    	notify: false,		
+		open: false,		   			
 		server: {
 			baseDir: './dist'			
 		}				
