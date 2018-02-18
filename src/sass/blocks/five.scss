@@ -10,7 +10,7 @@
         }
         &__img2 {            
             position: absolute;
-            bottom: -25px;
+            bottom: -35px;
             left: 0;            
         }
         &__text-block {
@@ -18,17 +18,13 @@
         	margin: 0 auto;
         }
         &__title {
-        	font-size: 1.2rem;
-        	line-height: 1.8rem;
-        	text-transform: uppercase;
-        	font-weight: bold;
+        	@include title-font();
         	width: 240px;
         	text-align: center;
         }
         &__text {
-        	margin-top: 30px;        	
-        	line-height: 1.8rem;
-        	text-transform: uppercase;       	
+            @include text-font();
+        	margin-top: 30px;       	       	
         	text-align: center;
         }
     }

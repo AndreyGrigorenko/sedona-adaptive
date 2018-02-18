@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+	.services {
+		padding-top: 25px;
+		padding-bottom: 10px;		
+		&__item {
+			position: relative;
+			padding-left: 60px;
+			margin-bottom: 20px;						
+		}
+		&__img {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: -10px;
+			left: 0;
+		}
+		&__title {
+			@include title-font();			
+		}
+		&__text {
+			@include text-font();
+			width: 210px;
+		}
+	}
+}

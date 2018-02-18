@@ -411,7 +411,7 @@ html {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   color: #333333; }
 
 .main-central-block {
@@ -530,20 +530,91 @@ a {
       left: 0; }
     .five__img2 {
       position: absolute;
-      bottom: -25px;
+      bottom: -35px;
       left: 0; }
     .five__text-block {
       width: 260px;
       margin: 0 auto; }
     .five__title {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: bold;
       font-size: 1.2rem;
       line-height: 1.8rem;
+      color: #333333;
       text-transform: uppercase;
-      font-weight: bold;
       width: 240px;
       text-align: center; }
     .five__text {
-      margin-top: 30px;
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
       line-height: 1.8rem;
+      color: #333333;
       text-transform: uppercase;
+      margin-top: 30px;
       text-align: center; } }
+
+@media (max-width: 767px) {
+  .real-town__text-block {
+    background: #81B3D2;
+    padding-top: 60px;
+    padding-bottom: 20px; }
+  .real-town__title {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: bold;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .real-town__number {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .real-town__text {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .real-town__img {
+    height: 260px; } }
+
+@media (max-width: 767px) {
+  .services {
+    padding-top: 25px;
+    padding-bottom: 10px; }
+    .services__item {
+      position: relative;
+      padding-left: 60px;
+      margin-bottom: 20px; }
+    .services__img {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -10px;
+      left: 0; }
+    .services__title {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: bold;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase; }
+    .services__text {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      width: 210px; } }
