@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+	.characteristic {		
+		background: $grey-color;
+		&__item {
+			margin-top: 0;			
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #D6D6D6;
+		}
+		&__item:last-child {			
+			border-bottom: none;
+		}		
+		&__title {
+			@include title-font();			
+			text-align: center;
+		}
+		&__number {
+			@include text-font();			
+			text-align: center;			
+		}
+		&__text {
+			@include text-font();			
+			text-align: center;			
+		}
+	}
+}

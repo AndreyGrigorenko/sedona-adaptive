@@ -20,14 +20,18 @@ a {
 	text-decoration: none;
 }
 
-
 @media (max-width: 767px) {
 	.central-block {		
 		width: 280px;
 		margin: 0 auto;	
 	}
 	.main-central-block {
-		width: 320px;
+		width: 320px;		
+	}
+}
+
+@media (min-width: 321px) {	
+	.main-central-block {		
 		border-left: 1px solid $grey-color;
 		border-right: 1px solid $grey-color;		
 		box-shadow: 0 0 7px $grey-color;

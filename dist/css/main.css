@@ -436,7 +436,10 @@ a {
     width: 280px;
     margin: 0 auto; }
   .main-central-block {
-    width: 320px;
+    width: 320px; } }
+
+@media (min-width: 321px) {
+  .main-central-block {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     -webkit-box-shadow: 0 0 7px #EEEEEE;
@@ -618,3 +621,73 @@ a {
       color: #333333;
       text-transform: uppercase;
       width: 210px; } }
+
+@media (max-width: 767px) {
+  .devil-bridge__text-block {
+    background: #81B3D2;
+    padding-top: 25px;
+    padding-bottom: 20px; }
+  .devil-bridge__title {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: bold;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .devil-bridge__number {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .devil-bridge__text {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center; }
+  .devil-bridge__img {
+    height: 260px; } }
+
+@media (max-width: 767px) {
+  .characteristic {
+    background: #EEEEEE; }
+    .characteristic__item {
+      margin-top: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #D6D6D6; }
+    .characteristic__item:last-child {
+      border-bottom: none; }
+    .characteristic__title {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: bold;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center; }
+    .characteristic__number {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center; }
+    .characteristic__text {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center; } }
