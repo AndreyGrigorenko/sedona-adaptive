@@ -3,16 +3,16 @@
 @import "global/mixins";
 /* @import "global/fonts"; */
 @import "global/globals";
-@import "blocks/main-header";
-@import "blocks/main-menu";
-@import "blocks/sedona";
-@import "blocks/five";
-@import "blocks/real-town";
-@import "blocks/services";
-@import "blocks/devil-bridge";
-@import "blocks/characteristic";
-@import "blocks/contacts";
-@import "blocks/main-footer";
-@import "blocks/socials";
-@import "blocks/html-academy";
+@import "global/main-header";
+@import "global/main-menu";
+@import "blocks/index/sedona";
+@import "blocks/index/five";
+@import "blocks/index/real-town";
+@import "blocks/index/services";
+@import "blocks/index/devil-bridge";
+@import "blocks/index/characteristic";
+@import "blocks/index/contacts";
+@import "global/main-footer";
+@import "global/socials";
+@import "global/html-academy";
 
