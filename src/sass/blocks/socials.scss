@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+	.socials {
+		width: 155px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;		
+		&__link {
+			display: block;
+			width: 45px;
+			height: 45px;
+			background: $blue-color;
+			margin-top: 30px;
+		}
+	}
+}

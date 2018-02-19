@@ -4,6 +4,7 @@
         &--mobile {
             position: absolute;
             top: 0;
+            left: 0;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -32,12 +33,13 @@
             a:active {
             	background: #5496BD;
             	color: #88B6D1;
-            }
+            }            
         }
         &__close {
             position: absolute;
             top: 15px;
             right: 20px;
+            cursor: pointer;
         }
     }    
 }

@@ -448,26 +448,24 @@ a {
 
 @media (max-width: 767px) {
   .main-header {
-    background: #ffffff; }
-    .main-header .central-block {
-      height: 55px;
-      position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+    background: #ffffff;
+    height: 55px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .main-header__logo {
       position: absolute;
       width: 101px;
       top: 0;
       left: 50%;
       margin-left: -50.5px;
-      z-index: 10; } }
+      z-index: 10; }
+    .main-header__burger {
+      position: absolute;
+      cursor: pointer;
+      top: 15px;
+      right: 20px; } }
 
 @media (max-width: 767px) {
   .main-menu {
@@ -475,6 +473,7 @@ a {
     .main-menu--mobile {
       position: absolute;
       top: 0;
+      left: 0;
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -510,7 +509,8 @@ a {
     .main-menu__close {
       position: absolute;
       top: 15px;
-      right: 20px; } }
+      right: 20px;
+      cursor: pointer; } }
 
 @media (max-width: 767px) {
   .sedona {
@@ -728,16 +728,60 @@ a {
     background: #81B3D2;
     border: none;
     color: #ffffff;
-    margin-top: 20px; }
+    margin-top: 20px;
+    cursor: pointer; }
+    .contacts__btn:hover {
+      background: #669EC0; }
+    .contacts__btn:active {
+      background: #5496BD;
+      color: #88B6D1; }
   .contacts__map {
-    height: 350px; } }
+    height: 350px;
+    position: relative; }
+  .contacts__marker {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px; } }
 
 @media (max-width: 767px) {
   .main-footer {
-    background: #ffffff; }
+    background: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px; }
     .main-footer__visitsedona {
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 1.8rem;
       text-align: center;
       text-transform: uppercase; } }
+
+@media (max-width: 767px) {
+  .socials {
+    width: 155px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .socials__link {
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: #81B3D2;
+      margin-top: 30px; } }
+
+@media (max-width: 767px) {
+  .html-academy {
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    text-transform: uppercase; } }

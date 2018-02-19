@@ -10,6 +10,8 @@ html(lang="ru")
 	body
 		.main-central-block
 			header.main-header
+				.main-header__burger
+					img(src="img/icon-menu.svg" alt="icon-menu")
 				nav.main-menu.main-menu--mobile
 					ul
 						li
@@ -22,11 +24,10 @@ html(lang="ru")
 							a(href="form.html") Форма отзыва
 						li
 							a(href="#") HTML academy
+
 				.central-block
 					.main-header__logo
 						img(src="img/logo-sedona-mobile.svg" alt="logo")
-					.main-header__burger
-						img(src="img/icon-menu.svg" alt="icon-menu")
 					nav.main-menu
 						ul
 							li
@@ -117,7 +118,8 @@ html(lang="ru")
 							p.contacts__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
 							button.contacts__btn Найти гостинницу
 				section.contacts__map
-					img(src="img/bg-map-mobile@1x.jpg" alt="map")
+					img.contacts__img(src="img/bg-map-mobile@1x.jpg" alt="map")
+					img.contacts__marker(src="img/icon-map-marker.svg" alt="map-marker")
 
 			footer.main-footer
 				.central-block
@@ -127,5 +129,4 @@ html(lang="ru")
 						a.socials__link(href="#")
 						a.socials__link(href="#")
 					section.html-academy
-						.html-academy__text Разработано
-						img(src="" alt="use")
+						.html-academy__text Разработано						

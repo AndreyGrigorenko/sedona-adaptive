@@ -22,9 +22,25 @@
 			border: none;
 			color: #ffffff;			
 			margin-top: 20px;
+			cursor: pointer;
+			&:hover {
+				background: #669EC0;
+			}
+			&:active {
+				background: #5496BD;
+				color: #88B6D1;
+			}
 		}
 		&__map {
 			height: 350px;
+			position: relative;
+		}
+		&__marker {
+			position: absolute;
+			left: 50%;
+			margin-left: -15px;
+			top: 50%;
+			margin-top: -15px;
 		}
 	}
 }

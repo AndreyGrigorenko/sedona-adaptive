@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+	.html-academy {
+		width: 130px;
+		margin: 0 auto;
+		margin-top: 30px;
+		@include text-font();
+	}
+}
