@@ -469,44 +469,43 @@ a {
 
 @media (max-width: 767px) {
   .main-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 20;
     display: none; }
-    .main-menu--mobile {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      z-index: 20;
-      display: none; }
-      .main-menu--mobile li:first-child {
-        position: relative; }
-      .main-menu--mobile a {
-        display: block;
-        min-height: 55px;
-        background: #81B3D2;
-        font-weight: bold;
-        font-size: 1.2rem;
-        line-height: 55px;
-        color: #ffffff;
-        text-transform: uppercase;
-        border-bottom: 1px solid #678FA8;
-        border-top: 1px solid #9AC2DB;
-        text-align: center; }
-      .main-menu--mobile a:hover {
-        background: #669EC0; }
-      .main-menu--mobile a:active {
-        background: #5496BD;
-        color: #88B6D1; }
+    .main-menu li:first-child {
+      position: relative; }
+    .main-menu a {
+      display: block;
+      min-height: 55px;
+      background: #81B3D2;
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 55px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-bottom: 1px solid #678FA8;
+      border-top: 1px solid #9AC2DB;
+      text-align: center; }
+    .main-menu a:hover {
+      background: #669EC0; }
+    .main-menu a:active {
+      background: #5496BD;
+      color: #88B6D1; }
     .main-menu__close {
+      height: 22px;
       position: absolute;
       top: 15px;
       right: 20px;
