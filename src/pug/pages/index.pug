@@ -1,22 +1,14 @@
-doctype html
-html(lang="ru")
-	head
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		link(href="css/main.css" rel="stylesheet")
-		title index.html
-		
-	body
-		include ../sections/index/inline-svg
+extends ../template
 
-		.main-central-block
-			include ../sections/global/main-header
-			include ../sections/index/sedona
-			include ../sections/index/five
-			include ../sections/index/real-town
-			include ../sections/index/services
-			include ../sections/index/devil-bridge
-			include ../sections/index/characteristic
-			include ../sections/index/contacts
-			include ../sections/global/main-footer
+block title
+	title index.html
+
+block content
+	include ../sections/index/inline-svg
+	include ../sections/index/sedona
+	include ../sections/index/five
+	include ../sections/index/real-town
+	include ../sections/index/services
+	include ../sections/index/devil-bridge
+	include ../sections/index/characteristic
+	include ../sections/index/contacts

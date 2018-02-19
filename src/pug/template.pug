@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(href="css/main.css" rel="stylesheet")
+		block title
+
+	body
+		.main-central-block
+			header.main-header
+				.main-header__burger
+					img(src="img/icon-menu.svg" alt="icon-menu")
+				nav.main-menu.main-menu--mobile
+					ul
+						li
+							a(href="index.html") Главная
+							.main-menu__close
+								img(src="img/icon-cross.svg" alt="icon-cross")
+						li
+							a(href="media.html") Фото и видео
+						li
+							a(href="form.html") Форма отзыва
+						li
+							a(href="#") HTML academy
+
+				.central-block
+					.main-header__logo
+						img(src="img/logo-sedona-mobile.svg" alt="logo")
+					nav.main-menu
+						ul
+							li
+								a(href="index.html") Главная
+							li
+								a(href="media.html") Фото и видео
+							li
+								a(href="form.html") Форма отзыва
+							li
+								a(href="#") HTML academy
+								
+			block content
+
+			footer.main-footer
+				.central-block
+					section.main-footer__visitsedona #visitsedona
+					section.socials
+						a.socials__link(href="#")
+							svg.socials__svg.socials__svg--tw 
+								title twitter 
+								use(xlink:href="#icon-twitter")
+						a.socials__link(href="#")
+							svg.socials__svg.socials__svg--fb 
+								title facebook 
+								use(xlink:href="#icon-facebook")
+						a.socials__link(href="#")
+							svg.socials__svg.socials__svg--youtube 
+								title youtube
+								use(xlink:href="#icon-youtube")
+					section.html-academy
+						.html-academy__text Разработано
+						svg.html-academy__logo
+							title html academy
+							use(xlink:href="#logo-htmlacademy")
