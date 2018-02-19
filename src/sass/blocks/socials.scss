@@ -5,11 +5,37 @@
 		display: flex;
 		justify-content: space-between;		
 		&__link {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 45px;
 			height: 45px;
 			background: $blue-color;
 			margin-top: 30px;
+			&:hover {
+				background: #669EC0;
+			}
+			&:active {
+				background: #5496BD;
+			}
+			&:active .socials__svg {
+				fill: #88B6D1;
+			}
+		}		
+		&__svg--fb {
+			width: 10px;
+			height: 20px;
+			fill: #ffffff;
+		}
+		&__svg--tw {
+			width: 17px;
+			height: 17px;
+			fill: #ffffff;
+		}
+		&__svg--youtube {
+			width: 20px;
+			height: 15px;
+			fill: #ffffff;
 		}
 	}
 }

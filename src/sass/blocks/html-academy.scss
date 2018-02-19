@@ -4,5 +4,20 @@
 		margin: 0 auto;
 		margin-top: 30px;
 		@include text-font();
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__logo {			
+			width: 30px;
+			height: 35px;
+			fill: #000000;
+			cursor: pointer;
+			&:hover {
+				fill: $blue-color;	
+			}
+			&:active {
+				fill: #B2B2B2;	
+			}
+		}
 	}
 }

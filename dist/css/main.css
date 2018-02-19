@@ -735,6 +735,10 @@ a {
     .contacts__btn:active {
       background: #5496BD;
       color: #88B6D1; }
+    .contacts__btn:disabled {
+      background: #E5E5E5;
+      color: #ffffff;
+      cursor: default; }
   .contacts__map {
     height: 350px;
     position: relative; }
@@ -768,11 +772,37 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .socials__link {
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 45px;
       height: 45px;
       background: #81B3D2;
-      margin-top: 30px; } }
+      margin-top: 30px; }
+      .socials__link:hover {
+        background: #669EC0; }
+      .socials__link:active {
+        background: #5496BD; }
+      .socials__link:active .socials__svg {
+        fill: #88B6D1; }
+    .socials__svg--fb {
+      width: 10px;
+      height: 20px;
+      fill: #ffffff; }
+    .socials__svg--tw {
+      width: 17px;
+      height: 17px;
+      fill: #ffffff; }
+    .socials__svg--youtube {
+      width: 20px;
+      height: 15px;
+      fill: #ffffff; } }
 
 @media (max-width: 767px) {
   .html-academy {
@@ -784,4 +814,22 @@ a {
     font-size: 1rem;
     line-height: 1.8rem;
     color: #333333;
-    text-transform: uppercase; } }
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .html-academy__logo {
+      width: 30px;
+      height: 35px;
+      fill: #000000;
+      cursor: pointer; }
+      .html-academy__logo:hover {
+        fill: #81B3D2; }
+      .html-academy__logo:active {
+        fill: #B2B2B2; } }

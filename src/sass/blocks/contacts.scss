@@ -30,6 +30,11 @@
 				background: #5496BD;
 				color: #88B6D1;
 			}
+			&:disabled {
+				background: #E5E5E5;
+				color: #ffffff;
+				cursor: default;
+			}
 		}
 		&__map {
 			height: 350px;
