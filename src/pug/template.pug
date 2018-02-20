@@ -6,6 +6,8 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(href="css/main.css" rel="stylesheet")
 		block title
+		script.
+			document.createElement( "picture" );
 
 	body
 		.main-central-block
@@ -54,3 +56,5 @@ html(lang="ru")
 						svg.html-academy__logo
 							title html academy
 							use(xlink:href="#logo-htmlacademy")
+								
+		script(src="js/picturefill.min.js")
