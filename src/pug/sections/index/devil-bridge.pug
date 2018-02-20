@@ -6,4 +6,7 @@
 				.devil-bridge__number — №2 —
 				p.devil-bridge__text Да, по нему можно пройти! Если вы осмелитесь, конечно
 	section.devil-bridge__img
-		img(src="img/photo-bridge-mobile@1x.jpg" alt="photo-bridge")
+		picture
+			source(media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg, img/photo-bridge@2x.jpg 2x")
+			source(media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x")
+			img(src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x")

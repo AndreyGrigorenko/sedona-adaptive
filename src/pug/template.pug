@@ -14,7 +14,10 @@ html(lang="ru")
 					img(src="img/icon-menu.svg" alt="icon-menu")
 				.central-block
 					.main-header__logo
-						img(src="img/logo-sedona-mobile.svg" alt="logo")
+						picture
+							source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
+							source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
+							img(src="img/logo-sedona-mobile.svg" alt="logo")
 					nav.main-menu
 						ul
 							li

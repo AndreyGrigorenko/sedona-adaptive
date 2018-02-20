@@ -2,7 +2,8 @@
 	.sedona {
 		min-height: 389px;
 		background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top #E4F1F9;
-	.central-block {
+		background-size: 768px auto;			
+		.central-block {
 			height: 389px;
 			display: flex;		
 		}		
@@ -12,4 +13,13 @@
 		}
 	}
 }
+
+@media (max-width: 767px) and
+	   (min-resolution: 144dpi),
+	   (min-resolution: 1.5dppx) {
+			.sedona {
+				background: url("../img/bg-back-mobile@2x.jpg");
+			}
+		}	
+
 
