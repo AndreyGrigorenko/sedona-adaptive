@@ -5,18 +5,22 @@
 				h2.video__title Все еще сомневаетесь?
 				p.video__text Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
 	section.video__img
-		img(src="img/video-mobile@1x.jpg" alt="video")
+		picture
+			source(media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x")
+			source(media="(min-width:768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x")
+			img(src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video")
 		.video__nav
 			.video__nav1
 			.video__nav2
-				svg.video__btn1(style="width:10px; height: 10px;")
-					title
-					use(xlink:href="")
-				
-				svg.video__btn2(style="width:10px; height: 10px;")
-					title
-					use(xlink:href="")
-				
-				svg.video__btn3(style="width:10px; height: 10px;")
-					title
-					use(xlink:href="")
+				.video__btn1
+					svg.video__svg1
+						title video-replay
+						use(xlink:href="#icon-video-replay")
+				.video__btn2
+					svg.video__svg2
+						title video-subtitles
+						use(xlink:href="#icon-video-subtitles")
+				.video__btn3
+					svg.video__svg3
+						title video-fullscreen
+						use(xlink:href="#icon-video-fullscreen")

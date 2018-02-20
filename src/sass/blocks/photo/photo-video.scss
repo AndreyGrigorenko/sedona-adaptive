@@ -3,6 +3,7 @@
 		min-height: 190px;
 		background: #ffffff;
 		position: relative;
+		border-bottom: 1px solid #E5E5E5;
 		.central-block {
 			height: 190px;
 			display: flex;			
@@ -17,13 +18,13 @@
 		}
 		&__title {
 			@include title-font();
-			text-align: center;			
+			text-align: center;					
 		}
 		&__text {
 			@include text-font();
 			font-weight: normal;
 			text-align: center;
-			width: 270px;
+			width: 270px;			
 		}
 	}
 }
