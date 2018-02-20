@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+	.video {
+		background: #ffffff;
+		padding-bottom: 100px;
+		padding-top: 20px;
+		&__title {
+			@include title-font();
+			text-align: center;
+			margin-top: 30px;
+		}
+		&__text {
+			@include text-font();
+			text-align: center;
+			width: 240px;
+			margin: 0 auto;			
+		}
+		&__img {			
+			margin-top: 30px;			
+			height: 201px;
+			position: relative;
+		}
+		&__nav {
+			position: absolute;
+			left: 50%;
+			margin-left: -140px;
+			bottom: -65px;
+		}
+		&__nav1 {
+			width: 280px;
+			height: 45px;
+			background: rgba(0, 0, 0, 0.6);
+		}
+		&__nav2 {
+			width: 280px;
+			height: 65px;
+			background: #F2F2F2;
+		}
+	}
+}

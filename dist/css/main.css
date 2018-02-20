@@ -808,6 +808,48 @@ a {
       width: 270px; } }
 
 @media (max-width: 767px) {
+  .video {
+    background: #ffffff;
+    padding-bottom: 100px;
+    padding-top: 20px; }
+    .video__title {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: bold;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px; }
+    .video__text {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center;
+      width: 240px;
+      margin: 0 auto; }
+    .video__img {
+      margin-top: 30px;
+      height: 201px;
+      position: relative; }
+    .video__nav {
+      position: absolute;
+      left: 50%;
+      margin-left: -140px;
+      bottom: -65px; }
+    .video__nav1 {
+      width: 280px;
+      height: 45px;
+      background: rgba(0, 0, 0, 0.6); }
+    .video__nav2 {
+      width: 280px;
+      height: 65px;
+      background: #F2F2F2; } }
+
+@media (max-width: 767px) {
   .main-footer {
     background: #ffffff;
     padding-top: 30px;
