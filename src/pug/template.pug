@@ -16,10 +16,11 @@ html(lang="ru")
 					img(src="img/icon-menu.svg" alt="icon-menu")
 				.central-block
 					.main-header__logo
-						picture
-							source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
-							source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
-							img(src="img/logo-sedona-mobile.svg" alt="logo")
+						a(href="index.html")
+							picture
+								source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
+								source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
+								img(src="img/logo-sedona-mobile.svg" alt="logo")
 					nav.main-menu
 						ul
 							li
@@ -27,7 +28,7 @@ html(lang="ru")
 								.main-menu__close
 									img(src="img/icon-cross.svg" alt="icon-cross")
 							li
-								a(href="media.html") Фото и видео
+								a(href="photo.html") Фото и видео
 							li
 								a(href="form.html") Форма отзыва
 							li
