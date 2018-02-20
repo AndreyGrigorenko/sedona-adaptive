@@ -773,6 +773,41 @@ a {
     background: url("../img/bg-back-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
+  .photo-video {
+    min-height: 190px;
+    background: #ffffff;
+    position: relative; }
+    .photo-video .central-block {
+      height: 190px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .photo-video__img {
+      position: absolute;
+      top: -26px;
+      left: 0; }
+    .photo-video__text-block {
+      margin: auto; }
+    .photo-video__title {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: bold;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      text-align: center; }
+    .photo-video__text {
+      font-family: "PT Sans", "Tahoma", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.8rem;
+      color: #333333;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+      width: 270px; } }
+
+@media (max-width: 767px) {
   .main-footer {
     background: #ffffff;
     padding-top: 30px;

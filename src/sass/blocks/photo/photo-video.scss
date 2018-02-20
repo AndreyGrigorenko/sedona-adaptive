@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+	.photo-video {
+		min-height: 190px;
+		background: #ffffff;
+		position: relative;
+		.central-block {
+			height: 190px;
+			display: flex;			
+		}
+		&__img {
+			position: absolute;
+			top: -26px;
+			left: 0;
+		}
+		&__text-block {
+			margin: auto;
+		}
+		&__title {
+			@include title-font();
+			text-align: center;			
+		}
+		&__text {
+			@include text-font();
+			font-weight: normal;
+			text-align: center;
+			width: 270px;
+		}
+	}
+}
