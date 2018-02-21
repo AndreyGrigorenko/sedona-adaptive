@@ -1,24 +1,22 @@
-@media (max-width: 767px) {
 	.sedona-2 {
-		min-height: 160px;
-		background: url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom #A26D66;
-		background-size: 768px auto;
-		.central-block {
-			height: 160px;
-			display: flex;
+	    min-height: 160px;
+	    background: url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom #A26D66;
+	    background-size: 768px auto;
+	    @media (min-resolution: 144dpi),
+		   	   (min-resolution: 1.5dppx) {
+	     		& {
+	        		background: url("../img/bg-back-mobile@2x.jpg");
+	    	}
 		}
-		&__text {
-			width: 230px;
-			height: 40px;
-			margin: auto;			
-		} 
+	    .central-block {
+	        height: 160px;
+	        display: flex;
+	    }
+	    &__text {
+	        width: 230px;
+	        height: 40px;
+	        margin: auto;
+	    }
 	}
-}
 
-@media (max-width: 767px) and
-	   (min-resolution: 144dpi),
-	   (min-resolution: 1.5dppx) {
-			.sedona-2 {
-				background: url("../img/bg-back-mobile@2x.jpg");
-			}
-		}	
+	

@@ -1,10 +1,8 @@
-@media (max-width: 767px) {
-	.main-footer {
-		background: #ffffff;
-		padding-top: 30px;
-		padding-bottom: 20px;
-		&__visitsedona {
-			@include title-font2();
-		}
-	}
+.main-footer {
+    background: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    &__visitsedona {
+        @include title-font2();
+    }
 }

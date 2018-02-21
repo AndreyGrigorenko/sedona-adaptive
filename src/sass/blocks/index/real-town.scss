@@ -1,27 +1,25 @@
-@media (max-width: 767px) {
-	.real-town {
-		&__text-block {
-			background: $blue-color;
-			padding-top: 60px;
-			padding-bottom: 20px;
-		}
-		&__title {
-			@include title-font();
-			color: #ffffff;
-			text-align: center;
-		}
-		&__number {
-			@include text-font();
-			color: #ffffff;
-			text-align: center;			
-		}
-		&__text {
-			@include text-font();
-			color: #ffffff;
-			text-align: center;			
-		}
-		&__img {
-			height: 260px;
-		}
-	}
+.real-town {
+    &__text-block {
+        background: $blue-color;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        @include title-font();
+        color: #ffffff;
+        text-align: center;
+    }
+    &__number {
+        @include text-font();
+        color: #ffffff;
+        text-align: center;
+    }
+    &__text {
+        @include text-font();
+        color: #ffffff;
+        text-align: center;
+    }
+    &__img {
+        height: 260px;
+    }
 }

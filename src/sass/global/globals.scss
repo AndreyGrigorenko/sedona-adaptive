@@ -25,18 +25,13 @@ a {
 	text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) {
 	.central-block {		
 		width: 280px;
 		margin: 0 auto;	
 	}
 	.main-central-block {
-		width: 320px;		
-	}
-}
-
-@media (min-width: 321px) {	
-	.main-central-block {			
-		box-shadow: 0 0 7px #ACACAC;
+		width: 320px;
+		box-shadow: 0 0 7px #ACACAC;		
 	}
 }

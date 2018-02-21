@@ -1,8 +1,13 @@
-@media (max-width: 767px) {
-	.sedona {
+.sedona {
 		min-height: 389px;
 		background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top #E4F1F9;
-		background-size: 768px auto;			
+		background-size: 768px auto;
+		@media (min-resolution: 144dpi),
+	   		   (min-resolution: 1.5dppx) {
+				& {
+				background: url("../img/bg-back-mobile@2x.jpg");
+			}
+		}				
 		.central-block {
 			height: 389px;
 			display: flex;		
@@ -12,14 +17,8 @@
 			margin: auto;
 		}
 	}
-}
 
-@media (max-width: 767px) and
-	   (min-resolution: 144dpi),
-	   (min-resolution: 1.5dppx) {
-			.sedona {
-				background: url("../img/bg-back-mobile@2x.jpg");
-			}
-		}	
+
+
 
 

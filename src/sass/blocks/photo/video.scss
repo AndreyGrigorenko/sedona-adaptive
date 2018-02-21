@@ -1,100 +1,101 @@
-@media (max-width: 767px) {
-	.video {
-		background: #ffffff;
-		padding-bottom: 100px;
-		padding-top: 20px;
-		&__title {
-			@include title-font();
-			text-align: center;
-			margin-top: 30px;
-		}
-		&__text {
-			@include text-font();
-			text-align: center;
-			width: 240px;
-			margin: 0 auto;			
-		}
-		&__img {			
-			margin-top: 30px;			
-			height: 201px;
-			position: relative;
-		}
-		&__nav {
-			position: absolute;
-			left: 50%;
-			margin-left: -140px;
-			bottom: -65px;
-		}
-		&__nav1 {
-			width: 280px;
-			height: 45px;
-			background: rgba(0, 0, 0, 0.6);
-			position: relative;
-		}
-		&__nav1::before {
-			content: "";
-			position: absolute;
-			width: 235px;
-			height: 3px;
-			background: rgba(115, 111, 109, 0.6);
-			top: 50%;
-			margin-top: -1.5px;
-			left: 50%;
-			margin-left: -117.5px;			
-		}
-		&__nav1::after {
-			content: "";
-			position: absolute;
-			left: 60px;
-			top: 18px;
-			width: 9px;
-			height: 9px;
-			background: #ffffff;
-			border-radius: 50%;
-			cursor: pointer;		
-		}
-		&__nav2 {
-			width: 280px;
-			height: 65px;
-			background: #F2F2F2;
-			position: relative;
-		}
-		&__btn1, &__svg1 {
-			width: 17px;
-			height: 22px;
-			fill: #5C6870;
-			position: absolute;
-			left: 13px;
-			top: 11px;
-			cursor: pointer;
-		}
-		&__btn2, &__svg2 {
-			width: 30px;
-			height: 20px;
-			fill: #5C6870;
-			position: absolute;
-			right: 35px;
-			top: 11px;
-			cursor: pointer;			
-		}
-		&__btn3, &__svg3 {
-			width: 20px;
-			height: 20px;
-			fill: #5C6870;
-			position: absolute;
-			right: 12px;
-			top: 11px;
-			cursor: pointer;			
-		}
-		&__btn1:hover &__svg1,
-		&__btn2:hover &__svg2,
-		&__btn3:hover &__svg3 {
-			fill: #333333;
-		}
-		&__btn1:active &__svg1,
-		&__btn2:active &__svg2,
-		&__btn3:active &__svg3 {
-			fill: #C1C1C1;
-		}
-	}
+.video {
+    background: #ffffff;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    &__title {
+        @include title-font();
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__text {
+        @include text-font();
+        text-align: center;
+        width: 240px;
+        margin: 0 auto;
+    }
+    &__img {
+        margin-top: 30px;
+        height: 201px;
+        position: relative;
+    }
+    &__nav {
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+        bottom: -65px;
+    }
+    &__nav1 {
+        width: 280px;
+        height: 45px;
+        background: rgba(0, 0, 0, 0.6);
+        position: relative;
+    }
+    &__nav1::before {
+        content: "";
+        position: absolute;
+        width: 235px;
+        height: 3px;
+        background: rgba(115, 111, 109, 0.6);
+        top: 50%;
+        margin-top: -1.5px;
+        left: 50%;
+        margin-left: -117.5px;
+    }
+    &__nav1::after {
+        content: "";
+        position: absolute;
+        left: 60px;
+        top: 18px;
+        width: 9px;
+        height: 9px;
+        background: #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__nav2 {
+        width: 280px;
+        height: 65px;
+        background: #F2F2F2;
+        position: relative;
+    }
+    &__btn1,
+    &__svg1 {
+        width: 17px;
+        height: 22px;
+        fill: #5C6870;
+        position: absolute;
+        left: 13px;
+        top: 11px;
+        cursor: pointer;
+    }
+    &__btn2,
+    &__svg2 {
+        width: 30px;
+        height: 20px;
+        fill: #5C6870;
+        position: absolute;
+        right: 35px;
+        top: 11px;
+        cursor: pointer;
+    }
+    &__btn3,
+    &__svg3 {
+        width: 20px;
+        height: 20px;
+        fill: #5C6870;
+        position: absolute;
+        right: 12px;
+        top: 11px;
+        cursor: pointer;
+    }
+    &__btn1:hover &__svg1,
+    &__btn2:hover &__svg2,
+    &__btn3:hover &__svg3 {
+        fill: #333333;
+    }
+    &__btn1:active &__svg1,
+    &__btn2:active &__svg2,
+    &__btn3:active &__svg3 {
+        fill: #C1C1C1;
+    }
 }
