@@ -1,6 +1,6 @@
 @mixin main-font() {
 	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-style: normal;
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
@@ -8,7 +8,7 @@
 
 @mixin title-font() {
 	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-style: bold;
+	font-weight: bold;
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 	color: #333333;
@@ -17,7 +17,7 @@
 
 @mixin text-font() {
 	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-style: normal;
+	font-weight: normal;
 	font-size: 1rem;
 	line-height: 1.8rem;
 	color: #333333;
@@ -27,7 +27,34 @@
 @mixin title-font2() {
 	font-size: 1.5rem;
 	font-weight: bold;
-	line-height: 1.8rem;
-	text-align: center;
+	line-height: 1.8rem;	
 	text-transform: uppercase;
+}
+
+
+
+@mixin item-title-font() {
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+@mixin item-text-font() {
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	color: #333333;	
+}
+
+@mixin item-number-font() {
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	color: #333333;
+	text-transform: uppercase;	
 }

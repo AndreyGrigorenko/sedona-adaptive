@@ -1,0 +1,33 @@
+.items {
+	&__item {
+		background: #ffffff;		
+		border-bottom: 1px solid #E5E5E5;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	&__img {
+		height: 280px;
+	}	
+	&__text-block {		
+		margin-top: -5px;
+	}
+	&__title {
+		@include item-title-font();
+	}
+	&__text {
+		@include item-text-font();
+		margin-top: -15px;
+	}	
+	&__likes {
+		width: 70px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5px;
+	}
+	&__likes-img img {
+		fill: #B2B2B2;
+	}
+	&__likes-number {
+		@include item-number-font();
+	}
+}
