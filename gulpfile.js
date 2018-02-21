@@ -77,18 +77,18 @@ gulp.task('clean', function() {
 })
 
 gulp.task('server', function() {
-	browserSync.init({
-		open: false,		   			
-		server: {
-			baseDir: './dist'			
-		}				
+	browserSync.init({		
+		server: 'dist',
+    	notify: false,
+    	open: true,
+    	ui: false			
 	});
 });
 
 gulp.task('watch', function() {
-	gulp.watch('src/**/*.pug', ['pug']);
-	gulp.watch('src/**/*.scss', ['sass']);
+	gulp.watch('src/pug/**/*.pug', ['pug']);
+	gulp.watch('src/scss/**/*.scss', ['sass']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
-	gulp.watch(['./src/img/**/*.*', './src/fonts/**/*.*'], ['assets']);
+	gulp.watch(['src/img/**/*.*', './src/fonts/**/*.*'], ['copy']);
 	gulp.watch('src/**/*.*').on('change', browserSync.reload);	
 });
