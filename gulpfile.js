@@ -10,8 +10,9 @@ var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync').create();
+var wait = require('gulp-wait');
 
-gulp.task('dev', function(fn) {
+gulp.task('dev', function(fn) { //Для разработки 
   run(
   	'clean',
  	'pug',
@@ -24,7 +25,7 @@ gulp.task('dev', function(fn) {
   );
 });
 
-gulp.task('production', function(fn) {
+gulp.task('production', function(fn) { //Для продакшина 
   run(
   	'clean',
  	'pug',
@@ -46,6 +47,7 @@ gulp.task('pug', function() {
 
 gulp.task('sass', function() {
 	return gulp.src('src/sass/main.scss')
+		.pipe(wait(500))				
 		.pipe(plumber())		
 		.pipe(sass())
 		.pipe(autoprefixer({
@@ -86,8 +88,8 @@ gulp.task('server', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('src/pug/**/*.pug', ['pug']);
-	gulp.watch('src/scss/**/*.scss', ['sass']);
+	gulp.watch('src/**/*.pug', ['pug']);
+	gulp.watch('src/**/*.scss', ['sass']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
 	gulp.watch(['src/img/**/*.*', './src/fonts/**/*.*'], ['copy']);
 	gulp.watch('src/**/*.*').on('change', browserSync.reload);	
