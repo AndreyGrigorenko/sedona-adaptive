@@ -1,0 +1,28 @@
+.review {
+    min-height: 200px;
+    background: #ffffff;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5;
+    .central-block {
+        height: 200px;
+        display: flex;
+    }
+    &__img {
+        position: absolute;
+        top: -26px;
+        left: 0;
+    }
+    &__text-block {
+        margin: auto;
+    }
+    &__title {
+        @include title-font();
+        text-align: center;
+    }
+    &__text {
+        @include text-font();
+        font-weight: normal;
+        text-align: center;
+        width: 280px;
+    }
+}
