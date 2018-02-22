@@ -6,6 +6,7 @@
     }
     &__title {
         @include title-font2();
+        text-align: center;
     }
     &__text {
         @include main-font();

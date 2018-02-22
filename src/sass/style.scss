@@ -1,11 +1,11 @@
 @import "global/normalize";
+@import "global/fonts";
 @import "global/variables";
 @import "global/mixins";
-/* @import "global/fonts"; */
 @import "global/globals";
-
 @import "global/main-header";
 @import "global/main-menu";
+
 @import "blocks/index/sedona";
 @import "blocks/index/five";
 @import "blocks/index/real-town";
