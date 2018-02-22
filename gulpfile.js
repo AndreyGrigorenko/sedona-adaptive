@@ -5,7 +5,7 @@ var pug = require('gulp-pug');
 var plumber = require('gulp-plumber');
 var run = require('run-sequence');
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
@@ -15,6 +15,12 @@ var wait = require('gulp-wait');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var rename = require('gulp-rename');
+var sourcemaps = require('gulp-sourcemaps');
+var notify = require('gulp-notify');
+var postcss = require('gulp-postcss');
+var mqpacker = require('css-mqpacker');
+var minify = require('gulp-csso');
+var delDirectoryFiles = require('gulp-delete-directory-files');
 
 gulp.task('start', function(fn) { //Для разработки 
   run(
@@ -54,14 +60,31 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src('src/sass/main.scss')
+	return gulp.src('src/sass/style.scss')
 		.pipe(wait(500))				
-		.pipe(plumber())		
+		.pipe(plumber({
+			errorHandler: notify.onError(function(err) { 
+				return {
+					title: 'Error in styles',
+					message: err.message
+				}
+			})
+		}))
+		.pipe(sourcemaps.init())		
 		.pipe(sass())
-		.pipe(autoprefixer({
-			browsers : ['last 2 versions']			
-		}))		
-		.pipe(gulp.dest('dist/css/'));		
+		.pipe(postcss([
+			autoprefixer({
+				browsers : ['last 2 versions']			
+			}),
+			mqpacker({
+        		sort: true
+      		})
+      	]))      	
+      	.pipe(minify())				
+		.pipe(sourcemaps.write())
+		.pipe(rename('style.min.css'))
+		.pipe(clean('style.css'))			
+		.pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('scripts', function() {
@@ -96,8 +119,8 @@ gulp.task('symbols', function() {
   .pipe(svgstore({
     inlineSvg: true
   }))
-  .pipe(rename('symbols.svg'))
-  .pipe(gulp.dest('dist/img'));
+  .pipe(rename('symbols.svg'))    
+  .pipe(gulp.dest('dist/img'));  
 });
 
 gulp.task('clean', function() {
@@ -121,3 +144,8 @@ gulp.task('watch', function() {
 	gulp.watch(['src/img/**/*.*', './src/fonts/**/*.*'], ['copy']);
 	gulp.watch('src/**/*.*').on('change', browserSync.reload);	
 });
+
+/*gulp.task('html', function() {
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('dist'));
+});*/
