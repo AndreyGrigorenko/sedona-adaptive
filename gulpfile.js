@@ -9,29 +9,37 @@ var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
+var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var wait = require('gulp-wait');
+var svgmin = require('gulp-svgmin');
+var svgstore = require('gulp-svgstore');
+var rename = require('gulp-rename');
 
-gulp.task('dev', function(fn) { //Для разработки 
+gulp.task('start', function(fn) { //Для разработки 
   run(
   	'clean',
  	'pug',
  	'sass',
  	'scripts',
  	'copy',
+ 	'images',
+ 	'symbols',
     'server',
     'watch',   
     fn
   );
 });
 
-gulp.task('production', function(fn) { //Для продакшина 
+gulp.task('build', function(fn) { //Для продакшина 
   run(
   	'clean',
  	'pug',
  	'sass',
  	'scripts',
- 	'copy',       
+ 	'copy',
+ 	'images',
+ 	'symbols',       
     fn
   );
 });
@@ -73,10 +81,29 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('dist'));
 });
 
+gulp.task('images', function() {
+  return gulp.src('dist/img/**/*.{jpg, png, gif}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+  ]))
+  .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('symbols', function() {
+  return gulp.src('dist/img/icons/*.svg')
+  .pipe(svgmin())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('symbols.svg'))
+  .pipe(gulp.dest('dist/img'));
+});
+
 gulp.task('clean', function() {
 	return gulp.src('dist/')
 		.pipe(clean());
-})
+});
 
 gulp.task('server', function() {
 	browserSync.init({		
