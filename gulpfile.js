@@ -20,7 +20,7 @@ var notify = require('gulp-notify');
 var postcss = require('gulp-postcss');
 var mqpacker = require('css-mqpacker');
 var minify = require('gulp-csso');
-var delDirectoryFiles = require('gulp-delete-directory-files');
+/*var spritesmith = require('gulp.spritesmith');*/
 
 gulp.task('start', function(fn) { //Для разработки 
   run(
@@ -61,7 +61,7 @@ gulp.task('pug', function() {
 
 gulp.task('sass', function() {
 	return gulp.src('src/sass/style.scss')
-		.pipe(wait(500))				
+		.pipe(wait(200))				
 		.pipe(plumber({
 			errorHandler: notify.onError(function(err) { 
 				return {
@@ -148,4 +148,13 @@ gulp.task('watch', function() {
 /*gulp.task('html', function() {
   gulp.src('src/*.html')
     .pipe(gulp.dest('dist'));
+});*/
+
+/*gulp.task('sprite', function () {
+	gulp.src('dist/img/*.png')
+		.pipe(spritesmith({
+    		imgName: 'sprite.png',
+    		cssName: 'sprite.css'
+  		}))
+  		.pipe(gulp.dest('dist/img/'));
 });*/
