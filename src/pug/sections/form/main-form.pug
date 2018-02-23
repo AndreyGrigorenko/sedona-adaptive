@@ -1,0 +1,60 @@
+form.main-form(action="#" method="POST")
+	.main-form__inner
+		section.main-form__block1
+			.central-block
+				h2.main-form__title Представьтесь:
+				.main-form__name
+					label ИМЯ*:
+						input(type="text" name="main-form__name" placeholder="Ваше имя")
+				.main-form__sur-name
+					label ФАМИЛИЯ*:
+						input(type="text" name="main-form__sur-name" placeholder="Ваша фамилия")
+				.main-form__second-name
+					label Отчество:
+						input(type="text" name="main-form__second-name" placeholder="Ваше отчество")
+
+		section.main-form__block2
+			.central-block
+				h2.main-form__title Контактная информация:
+				.main-form__tel
+					label Контактный телефон*:
+						input(type="tel" name="main-form__tel" placeholder="Введите телефон")
+				.main-form__email
+					label Электронная почта*:
+						input(type="email" name="main-form__email" placeholder="Введите е-mail")
+
+		section.main-form__block3
+			.central-block
+				h2.main-form__title Вaше общее впечатление:
+				.main-form__radio
+					label Скорее положительное
+						input(type="radio" name="main-form__radio" checked)
+				.main-form__radio
+					label Скорее отрицательное
+						input(type="radio" name="main-form__radio")
+				.main-form__radio
+					label Затрудняюсь ответить
+						input(type="radio" name="main-form__radio")
+
+		section.main-form__block4
+			.central-block
+				h2.main-form__title Посещенные достопримечательности:
+				.main-form__check
+					label Мост Дьявола
+						input(type="checkbox" name="main-form__check")
+				.main-form__check
+					label Слайд-парк
+						input(type="checkbox" name="main-form__check")
+				.main-form__check
+					label Гора-Колокол
+						input(type="checkbox" name="main-form__check")
+				.main-form__check
+					label Красные скалы
+						input(type="checkbox" name="main-form__check")
+
+		section.main-form__block5
+			.central-block
+				h2.main-form__title Опишите свои эмоции:
+				.main-form__text
+					textarea(placeholder="Опишите подробно все свои восторги")
+				input(type="submit" value="Отправить отзыв")
