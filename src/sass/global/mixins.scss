@@ -58,3 +58,12 @@
 	color: #333333;
 	text-transform: uppercase;	
 }
+
+
+@mixin form-font() {
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #333333;	
+}
