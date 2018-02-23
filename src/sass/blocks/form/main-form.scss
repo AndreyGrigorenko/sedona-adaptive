@@ -53,7 +53,58 @@
 		border: none;
 		margin-left: 16px;
 	}
+	
 
+	&__tel {
+		display: flex;
+		width: 100%;
+		margin-top: 7px;
+		margin-bottom: 15px;		
+	}
+	&__tel input {
+		min-width: 220px;
+		height: 60px;		
+		border: none;
+		flex-grow: 1;						
+	}
+	&__label {
+		margin-left: 30px;				
+	}
+	&__icon-tel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 60px;
+		min-height: 60px;
+		box-sizing: border-box;
+		flex-shrink: 0;
+		background: #E6E6E6;
+		border: none;		
+
+	}
+
+	&__email {
+		display: flex;
+		width: 100%;
+		margin-top: 7px;				
+	}
+	&__email input {
+		min-width: 220px;
+		height: 60px;		
+		border: none;
+		flex-grow: 1;				
+	}	
+	&__icon-email {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 60px;
+		min-height: 60px;
+		box-sizing: border-box;
+		flex-shrink: 0;
+		background: #E6E6E6;
+		border: none;		
+	}
 
 
 

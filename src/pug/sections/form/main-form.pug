@@ -16,12 +16,16 @@ form.main-form(action="#" method="POST")
 	section.main-form__block.main-form__block--2
 		.central-block
 			h2.main-form__title Контактная информация:
+			label.main-form__label(for="tel") Контактный телефон*:
 			.main-form__tel
-				label Контактный телефон*:
-					input(type="tel" name="main-form__tel" placeholder="Введите телефон")
+				input(id="tel" type="tel" name="main-form__tel" placeholder="Введите телефон")
+				.main-form__icon-tel
+					img(src="img/icon-phone.svg" alt="icon-phone")
+			label.main-form__label(for="email") Электронная почта*:
 			.main-form__email
-				label Электронная почта*:
-					input(type="email" name="main-form__email" placeholder="Введите е-mail")
+				input(id="email" type="email" name="main-form__email" placeholder="Введите е-mail")
+				.main-form__icon-email
+					img(src="img/icon-mail.svg" alt="icon-mail")
 
 	section.main-form__block.main-form__block--3
 		.central-block
