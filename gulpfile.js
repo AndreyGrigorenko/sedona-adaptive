@@ -61,7 +61,7 @@ gulp.task('pug', function() {
 
 gulp.task('sass', function() {
 	return gulp.src('src/sass/style.scss')
-		.pipe(wait(200))				
+		.pipe(wait(300))				
 		.pipe(plumber({
 			errorHandler: notify.onError(function(err) { 
 				return {

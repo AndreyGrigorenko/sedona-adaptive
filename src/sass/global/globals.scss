@@ -35,3 +35,13 @@ a {
 		box-shadow: 0 0 7px #ACACAC;		
 	}
 }
+
+@media (min-width: 768px) {
+	.central-block {		
+		width: 650px;
+		margin: 0 auto;			
+	}
+	.main-central-block {
+		width: 100%;				
+	}
+}

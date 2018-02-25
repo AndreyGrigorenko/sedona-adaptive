@@ -18,6 +18,27 @@
 		}
 	}
 
+@media (min-width: 768px) {
+	.sedona {
+		min-height: 518px;
+		background: url("../img/bg-back-desktop@1x.jpg") no-repeat center center #E4F1F9;
+		background-size: 1200px auto;
+		@media (min-resolution: 144dpi),
+			   (min-resolution: 1.5dppx) {
+				& {
+				background: url("../img/bg-back-desktop@2x.jpg") no-repeat center center #E4F1F9;
+			}
+		}
+		.central-block {
+			height: 518px;					
+		}		
+		&__text {
+			width: 460px;			
+		}
+	}
+}
+
+
 
 
 
