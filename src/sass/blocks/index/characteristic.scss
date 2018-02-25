@@ -22,3 +22,38 @@
         text-align: center;
     }
 }
+
+@media (min-width: 768px) {
+    .characteristic {        
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .central-block {
+            width: 100%;
+        }
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;                                            
+        }
+        &__item {
+            width: 33%;           
+            border: none;                      
+        }        
+        &__title {
+            @include title-font3();
+            width: 120px;
+            margin: 0 auto;            
+        }
+        &__number {
+            margin-top: 20px;            
+        }
+        &__text {
+            @include text-font();
+            text-align: center;
+            width: 66%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+    }
+}
