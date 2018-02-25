@@ -40,7 +40,8 @@
 @media (min-width: 768px) {
    .main-menu {
         position: static;              
-        z-index: 0;                     
+        z-index: 0;
+        font-size: 0;                     
         &__close {
             display: none;
         }
@@ -49,13 +50,15 @@
             vertical-align: top;
             width: 20%;
             text-align: center;
+            height: 70px;                      
         }
         li:nth-child(3) {
-            margin-left: 18.2%;
+            margin-left: 20%;
         }
         a {           
             display: inline;
-            font-size: 1rem;            
+            font-size: 1rem;
+            line-height: 70px;            
             background: #ffffff;                        
             color: #000000;            
             border-bottom: none;

@@ -23,3 +23,36 @@
         height: 260px;
     }
 }
+
+@media (min-width: 768px) {
+    .devil-bridge {        
+        display: flex;
+        justify-content: space-between;
+        .central-block {
+            height: 256px;
+            width: 64%;            
+            display: flex;
+        }        
+        &__text-block {            
+            padding-top: 0;            
+            padding-bottom: 0;
+            width: 33%;
+            max-width: 420px;             
+            flex-shrink: 0;
+        }
+        &__inner-block {
+            margin: auto;
+            
+        }
+        &__title {
+          @include title-font3();
+          color: #ffffff;
+        }       
+        &__img {
+            height: 256px;
+            width: 67%;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
+}
