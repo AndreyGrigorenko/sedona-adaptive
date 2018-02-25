@@ -39,6 +39,7 @@
     &__map {
         height: 350px;
         position: relative;
+        background: url("../img/bg-map-mobile@1x.jpg") no-repeat center center;
     }
     &__marker {
         position: absolute;
@@ -46,5 +47,30 @@
         margin-left: -15px;
         top: 50%;
         margin-top: -15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        &__info {
+            text-align: center;
+        }
+        &__title {
+            font-size: 2.1rem;
+        }
+        &__text {
+            width: 430px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__btn {
+            width: 460px;
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &__map {
+            background: url("../img/bg-map-desktop@1x.jpg") no-repeat center center;           
+        }
     }
 }

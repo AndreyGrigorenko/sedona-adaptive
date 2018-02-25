@@ -25,7 +25,7 @@
 
 @media (min-width: 768px) {
     .characteristic {        
-        padding-top: 30px;
+        padding-top: 20px;
         padding-bottom: 30px;
         .central-block {
             width: 100%;
@@ -37,7 +37,8 @@
         }
         &__item {
             width: 33%;           
-            border: none;                      
+            border: none;
+            margin-top: 20px;                      
         }        
         &__title {
             @include title-font3();
@@ -48,8 +49,7 @@
             margin-top: 20px;            
         }
         &__text {
-            @include text-font();
-            text-align: center;
+            @include text-font();            
             width: 66%;
             margin: 0 auto;
             margin-top: 20px;

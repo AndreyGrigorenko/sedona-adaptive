@@ -37,3 +37,12 @@
         fill: #ffffff;
     }
 }
+
+@media (min-width: 768px) {
+    .socials {
+        margin: 0;
+        &__link {
+            margin-top: 0;
+        }
+    }
+}
