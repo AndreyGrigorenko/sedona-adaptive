@@ -1,7 +1,7 @@
 .main-header {
     background: #ffffff;
     min-height: 55px;
-    position: relative;   
+    position: relative;
     &__logo {
         position: absolute;
         width: 101px;
@@ -20,12 +20,22 @@
 
 @media (min-width: 768px) {
     .main-header {
-        .central-block {            
+        .central-block {
             height: 70px;
-            width: 100%; 
+            width: 100%;
         }
         &__burger {
             display: none;
-        } 
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header {
+        &__logo {           
+            width: 190px;            
+            left: 50%;
+            margin-left: -95px;            
+        }
     }
 }

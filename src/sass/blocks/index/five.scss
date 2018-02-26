@@ -66,3 +66,17 @@
         }
     } 
 }
+
+@media (min-width: 1200px) {
+   .five {       
+        &__img1 {
+            height: 57px;
+            position: absolute;
+            top: -57px;
+            left: 0;        
+            width: 100%;
+            background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center top;
+            background-size: 100% 57px;                              
+        }    
+    } 
+}
