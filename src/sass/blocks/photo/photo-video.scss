@@ -2,7 +2,7 @@
     min-height: 190px;
     background: #ffffff;
     position: relative;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;    
     .central-block {
         height: 190px;
         display: flex;
@@ -29,8 +29,8 @@
 
 @media (min-width: 768px) {
     .photo-video {
-        min-height: 220px;       
-        border-bottom: 1px solid #E5E5E5;
+        min-height: 220px;
+        border-bottom: none;        
         .central-block {
             height: 220px;            
         }
@@ -38,7 +38,7 @@
             display: none;
         }        
         &__title {
-            @include title-font3();            
+            @include title-font4();
         }
         &__text {           
             width: 430px;

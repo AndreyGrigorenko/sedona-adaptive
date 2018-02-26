@@ -1,6 +1,15 @@
 .items-block {
-	&__central-block {
-		width: 100%;
-		margin: 0 auto;
-	}
+    background: #ffffff;
+    &__central-block {
+        width: 100%;
+        margin: 0 auto;        
+    }
+}
+
+@media (min-width: 768px) {
+    .items-block {
+        &__central-block {
+            width: 648px;            
+        }
+    }
 }

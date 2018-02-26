@@ -1,33 +1,86 @@
 .items {
-	&__item {
-		background: #ffffff;		
-		border-bottom: 1px solid #E5E5E5;
-		padding-top: 20px;
-		padding-bottom: 10px;
-	}
-	&__img {
-		height: 280px;
-	}	
-	&__text-block {		
-		margin-top: -5px;
-	}
-	&__title {
-		@include item-title-font();
-	}
-	&__text {
-		@include item-text-font();
-		margin-top: -15px;
-	}	
-	&__likes {
-		width: 70px;
-		display: flex;
-		justify-content: space-between;
-		margin-top: 5px;
-	}
-	&__likes-img img {
-		fill: #B2B2B2;
-	}
-	&__likes-number {
-		@include item-number-font();
-	}
+    &__item {
+        background: #ffffff;
+        border-bottom: 1px solid #E5E5E5;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    &__img {
+        height: 280px;
+    }
+    &__text-block {
+        margin-top: -5px;
+    }
+    &__title {
+        @include item-title-font();
+    }
+    &__text {
+        @include item-text-font();
+        margin-top: -15px;
+    }
+    &__likes {
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    &__likes-img img {
+        fill: #B2B2B2;
+    }
+    &__likes-number {
+        @include item-number-font();
+    }
+}
+
+@media (min-width: 768px) {
+    .items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__item {
+            border-bottom: none;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 324px;
+            background: red;
+            .central-block {
+                background: #F2F2F2;
+                width: 100%;
+                position: relative;
+                box-sizing: border-box;
+                overflow: hidden;
+                padding-bottom: 15px;
+            }
+        }        
+        &__img {
+            height: 265px;
+        }
+
+        &__text-block {
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        &__likes {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        &__item:first-child {
+            width: 648px;
+            background: red;
+            .central-block {
+                width: 100%;
+                height: 475px;
+            }
+            .items__text-block {
+                margin-top: 150px;
+                margin-left: 20px;
+            }
+        }
+        &__item:nth-child(odd) {            
+            .central-block {
+                background: #EAEAEA;
+            }            
+        }
+    }
 }
