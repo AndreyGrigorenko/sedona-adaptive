@@ -26,3 +26,23 @@
         width: 270px;
     }
 }
+
+@media (min-width: 768px) {
+    .photo-video {
+        min-height: 220px;       
+        border-bottom: 1px solid #E5E5E5;
+        .central-block {
+            height: 220px;            
+        }
+        &__img {
+            display: none;
+        }        
+        &__title {
+            @include title-font3();            
+        }
+        &__text {           
+            width: 430px;
+            margin-top: 30px;
+        }
+    }
+}
