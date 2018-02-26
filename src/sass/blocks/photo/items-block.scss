@@ -13,3 +13,11 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .items-block {
+        &__central-block {
+            width: 100%;            
+        }
+    }
+}

@@ -1,5 +1,8 @@
 .photo-video
-	img.photo-video__img(src="img/bg-intro-triangle-mobile.svg" alt="bg-intro-triangle-mobile")
+	picture
+		source(media="(min-width:1200px)" srcset="img/bg-intro-triangle-desktop.svg")
+		source(media="(min-width:768px)" srcset="img/bg-intro-triangle-tablet.svg")
+		img.photo-video__img(src="img/bg-intro-triangle-mobile.svg" alt="bg-intro-triangle-mobile")
 	.central-block
 		section.photo-video__text-block
 			h2.photo-video__title Фото и видео

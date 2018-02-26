@@ -5,10 +5,11 @@ article.items
 		section.items__item
 			.central-block
 				.items__img !{elem.img}
-				.items__text-block
-					h3.items__title=elem.title
-					.items__text=elem.text
-				.items__likes
-					.items__likes-img
-						img(src="img/icon-like.svg" alt="like")
-					.items__likes-number=elem.number
+				.items__inner
+					.items__text-block
+						h3.items__title=elem.title
+						.items__text=elem.text
+					.items__likes
+						.items__likes-img
+							img(src="img/icon-like.svg" alt="like")
+						.items__likes-number=elem.number

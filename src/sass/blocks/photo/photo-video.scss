@@ -35,7 +35,10 @@
             height: 220px;            
         }
         &__img {
-            display: none;
+            top: -57px;
+            width: 768px;
+            left: 50%;
+            margin-left: -384px;
         }        
         &__title {
             @include title-font4();
@@ -44,5 +47,15 @@
             width: 430px;
             margin-top: 30px;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .photo-video {        
+        &__img {
+            top: -57px;            
+            width: 1200px;
+            margin-left: -600px;            
+        }       
     }
 }

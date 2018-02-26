@@ -189,3 +189,21 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .video {                
+        &__img {
+            height: 500px;
+            width: 800px;          
+        }
+        &__nav {           
+            margin-left: -400px;
+            width: 800px;
+        }        
+        &__nav1::before {
+            width: 545px;            
+        }                        
+    }
+}
+
+
