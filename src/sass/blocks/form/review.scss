@@ -26,3 +26,29 @@
         width: 280px;
     }
 }
+
+@media (min-width: 768px) {
+    .review {
+        &__title {
+            @include title-font4();
+        }
+        &__text {
+            width: 450px;
+        }
+        &__img {            
+            top: -57px;
+            width: 768px;
+            left: 50%;
+            margin-left: -384px;           
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .review {       
+        &__img {            
+            width: 1200px;            
+            margin-left: -600px;           
+        }
+    }
+}

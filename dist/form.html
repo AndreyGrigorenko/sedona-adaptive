@@ -61,7 +61,11 @@
 					<div class="sedona-2__text"><img src="img/text-sedona.svg" alt="sedona"></div>
 				</div>
 			</div>
-			<div class="review"><img class="review__img" src="img/bg-intro-triangle-mobile.svg" alt="bg-intro-triangle-mobile">
+			<div class="review">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+					<source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg"><img class="review__img" src="img/bg-intro-triangle-mobile.svg" alt="bg-intro-triangle">
+				</picture>
 				<div class="central-block">
 					<section class="review__text-block">
 						<h2 class="review__title">Оставьте свой отзыв
@@ -154,6 +158,7 @@
 								<div class="main-form__text">
 									<textarea placeholder="Опишите подробно все свои восторги"></textarea>
 									<input type="submit" value="Отправить отзыв">
+									<div class="main-form__sub-label">* — обязательные поля</div>
 								</div>
 							</div>
 						</section>
