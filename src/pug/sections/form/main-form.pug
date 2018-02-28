@@ -2,16 +2,16 @@ form.main-form(action="#" method="POST")
 	.main-form__inner
 		section.main-form__block.main-form__block--1
 			.central-block
-				h2.main-form__title Представьтесь:
+				h2.main-form__title.main-form__title--1 Представьтесь:
 				.main-form__name
-					label ИМЯ*:
-						input(type="text" name="main-form__name" placeholder="Ваше имя")
+					label(for="name") ИМЯ*:
+					input(id="name" type="text" name="main-form__name" placeholder="Ваше имя")
 				.main-form__sur-name
-					label ФАМИЛИЯ*:
-						input(type="text" name="main-form__sur-name" placeholder="Ваша фамилия")
+					label(for="sur-name") ФАМИЛИЯ*:
+					input(id="sur-name" type="text" name="main-form__sur-name" placeholder="Ваша фамилия")
 				.main-form__second-name
-					label Отчество:
-						input(type="text" name="main-form__second-name" placeholder="Ваше отчество")
+					label(for="second-name") Отчество:
+					input(id="second-name" type="text" name="main-form__second-name" placeholder="Ваше отчество")
 
 	section.main-form__block.main-form__block--2
 		.central-block
@@ -29,7 +29,7 @@ form.main-form(action="#" method="POST")
 
 	section.main-form__block.main-form__block--3
 		.central-block
-			h2.main-form__title Вaше общее впечатление:
+			h2.main-form__title.main-form__title--3 Вaше общее впечатление:
 			.main-form__radio
 					input(id="radio1" type="radio" name="main-form__radio" checked)
 					label(for="radio1") Скорее положительное

@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;    
     z-index: 20;
-    /* display: none; */
+    display: none;
     li:first-child {
         position: relative;
     }
@@ -39,6 +39,7 @@
 
 @media (min-width: 768px) {
    .main-menu {
+        display: block;
         position: static;              
         z-index: 0;
         font-size: 0;                     

@@ -29,6 +29,7 @@
 
 @media (min-width: 768px) {
     .review {
+        border-bottom: none;
         &__title {
             @include title-font4();
         }

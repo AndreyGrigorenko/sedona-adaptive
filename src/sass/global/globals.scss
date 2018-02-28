@@ -39,7 +39,7 @@ a {
 @media (min-width: 768px) {
 	.central-block {		
 		width: 84.6%;
-		margin: 0 auto;			
+		margin: 0 auto;					
 	}
 	.main-central-block {
 		width: 100%;				
@@ -48,10 +48,11 @@ a {
 
 @media (min-width: 1200px) {
 	.central-block {		
-		width: 85%;
+		width: 1020px;
 		margin: 0 auto;			
 	}
 	.main-central-block {
-		width: 1200px;				
+		width: 1200px;
+		margin: 0 auto;				
 	}
 }
