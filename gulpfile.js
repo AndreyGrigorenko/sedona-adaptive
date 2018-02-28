@@ -88,10 +88,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	gulp.src('src/js/**/*.js')
+	gulp.src('src/js/main.js')
 		.pipe(jshint())
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/js'));
+		.pipe(rename('main.min.js'))
+		.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('copy', function() {

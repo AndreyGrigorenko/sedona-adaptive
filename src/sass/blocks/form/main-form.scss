@@ -53,8 +53,6 @@
         border: none;
         margin-left: 16px;
     }
-
-
     &__tel {
         display: flex;
         width: 100%;
@@ -81,7 +79,6 @@
         background: #E6E6E6;
         border: none;
     }
-
     &__email {
         display: flex;
         width: 100%;
@@ -104,8 +101,6 @@
         background: #E6E6E6;
         border: none;
     }
-
-
     &__block--3 {
         padding-bottom: 35px;
         label {
@@ -152,8 +147,6 @@
     input[type="radio"]:checked+label::before {
         background: #D5D5D5;
     }
-
-
     &__block--4 {
         padding-bottom: 35px;
         label {
@@ -200,8 +193,6 @@
     input[type="checkbox"]:checked+label::before {
         background: #D5D5D5;
     }
-
-
     &__text textarea {
         height: 160px;
         width: 100%;
@@ -329,9 +320,6 @@
         }
     }
 }
-
-
-
 
 @media (min-width: 1200px) {
     .main-form {

@@ -49,8 +49,6 @@
 	text-transform: uppercase;
 }
 
-
-
 @mixin item-title-font() {
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: bold;
@@ -76,7 +74,6 @@
 	color: #333333;
 	text-transform: uppercase;	
 }
-
 
 @mixin form-font() {
 	font-family: "PT Sans", "Tahoma", sans-serif;
