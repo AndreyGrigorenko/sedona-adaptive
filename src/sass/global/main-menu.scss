@@ -2,9 +2,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;    
-    z-index: 20;
-    display: none;
+    width: 100%;
+    box-shadow: 0 2px 2px #5B7E94;    
+    z-index: 20;    
     li:first-child {
         position: relative;
     }
@@ -42,7 +42,8 @@
         display: block;
         position: static;              
         z-index: 0;
-        font-size: 0;                     
+        font-size: 0;
+        box-shadow: none;                     
         &__close {
             display: none;
         }
