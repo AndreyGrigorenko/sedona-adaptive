@@ -91,14 +91,14 @@ gulp.task('scripts', function() {
 	gulp.src('src/js/main.js')
 		.pipe(jshint())
 		.pipe(uglify())
-		.pipe(rename('main.min.js'))
+		.pipe(rename('main.min.js'))		
 		.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('copy', function() {
   return gulp.src([
     'src/fonts/**/*.{woff,woff2}',
-    'src/img/**'    
+    'src/img/**'        
   ], {
     base: 'src/'
   })

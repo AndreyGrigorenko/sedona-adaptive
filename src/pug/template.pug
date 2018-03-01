@@ -5,15 +5,12 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(href="css/style.min.css" rel="stylesheet")
-		block title
-		script.
-			document.createElement( "picture" );
+		block title		
 
 	body
 		.main-central-block
 			include global/main-header								
 			block content
-			include global/main-footer
-								
-		script(src="js/picturefill.min.js")
+			include global/main-footer								
+		
 		script(src="js/main.min.js")
