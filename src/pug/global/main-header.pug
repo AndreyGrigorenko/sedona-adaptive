@@ -1,0 +1,12 @@
+header.main-header
+	.main-header__burger
+		img(src="img/icon-menu.svg" alt="icon-menu")
+	.central-block
+		.main-header__logo
+			a(href="index.html")
+				picture
+					source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
+					source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
+					img(src="img/logo-sedona-mobile.svg" alt="logo")
+						
+		include main-menu

@@ -11,52 +11,9 @@ html(lang="ru")
 
 	body
 		.main-central-block
-			header.main-header
-				.main-header__burger
-					img(src="img/icon-menu.svg" alt="icon-menu")
-				.central-block
-					.main-header__logo
-						a(href="index.html")
-							picture
-								source(media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg")
-								source(media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg")
-								img(src="img/logo-sedona-mobile.svg" alt="logo")
-					nav.main-menu
-						ul
-							li
-								a(href="index.html") Главная
-								.main-menu__close
-									img(src="img/icon-cross.svg" alt="icon-cross")
-							li
-								a(href="photo.html") Фото и видео
-							li
-								a(href="form.html") Форма отзыва
-							li
-								a(href="#") HTML academy
-								
+			include global/main-header								
 			block content
-
-			footer.main-footer
-				.central-block
-					section.main-footer__visitsedona #visitsedona
-					section.socials
-						a.socials__link(href="#")
-							svg.socials__svg.socials__svg--tw 
-								title twitter 
-								use(xlink:href="#icon-twitter")
-						a.socials__link(href="#")
-							svg.socials__svg.socials__svg--fb 
-								title facebook 
-								use(xlink:href="#icon-facebook")
-						a.socials__link(href="#")
-							svg.socials__svg.socials__svg--youtube 
-								title youtube
-								use(xlink:href="#icon-youtube")
-					section.html-academy
-						.html-academy__text Разработано
-						svg.html-academy__logo
-							title html academy
-							use(xlink:href="#logo-htmlacademy")
+			include global/main-footer
 								
 		script(src="js/picturefill.min.js")
 		script(src="js/main.min.js")

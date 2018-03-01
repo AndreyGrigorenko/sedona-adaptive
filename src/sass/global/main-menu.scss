@@ -5,7 +5,7 @@
     width: 100%;
     box-shadow: 0 2px 2px #5B7E94;    
     z-index: 20;    
-    li:first-child {
+    ul {
         position: relative;
     }
     a {
@@ -29,11 +29,12 @@
         color: #88B6D1;
     }
     &__close {
+        width: 22px;
         height: 22px;
         position: absolute;
         top: 15px;
         right: 20px;
-        cursor: pointer;
+        cursor: pointer;        
     }
 }
 
@@ -54,7 +55,7 @@
             text-align: center;
             height: 70px;                      
         }
-        li:nth-child(3) {
+        &__left {
             margin-left: 20%;
         }
         a {           
