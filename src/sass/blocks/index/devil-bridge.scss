@@ -1,8 +1,8 @@
-.devil-bridge {
+.devil-bridge {    
     &__text-block {
         background: $blue-color;
         padding-top: 25px;
-        padding-bottom: 20px;
+        padding-bottom: 20px;        
     }
     &__title {
         @include title-font();
@@ -32,18 +32,17 @@
             height: 256px;
             width: 64%;            
             display: flex;
+            justify-content: center;
+            align-items: center;
         }        
         &__text-block {            
             padding-top: 0;            
             padding-bottom: 0;
             width: 33%;
             max-width: 420px;             
-            flex-shrink: 0;
+            flex-shrink: 0;            
         }
-        &__inner-block {
-            margin: auto;
-            
-        }
+        
         &__title {
           @include title-font3();
           color: #ffffff;
@@ -52,7 +51,7 @@
             height: 256px;
             width: 67%;
             flex-grow: 1;
-            overflow: hidden;
+            overflow: hidden;                       
         }
     }
 }

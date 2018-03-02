@@ -43,10 +43,12 @@
         .central-block {
             height: 190px;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }        
         &__text-block {
             width: 490px;
-            margin: auto;       
+            margin: 0;       
         }
         &__title {
             @include title-font3();
@@ -55,7 +57,7 @@
         &__img1 {
             height: 57px;
             position: absolute;
-            top: -57px;
+            top: -56px;
             left: 0;        
             width: 100%;
             background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center top;

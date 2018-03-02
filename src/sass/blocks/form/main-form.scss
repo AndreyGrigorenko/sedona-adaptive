@@ -239,21 +239,23 @@
             padding-top: 70px;
             padding-bottom: 70px;
             position: relative;
-        }
-
+        }        
         &__block--1 {
             border-top: 1px solid #DBDBDB;
             padding-top: 50px;
-            padding-bottom: 0;
-            .central-block {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
+            padding-bottom: 0;            
+        }
+        &__flex-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;                                                
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         &__name {
             margin-top: 0;
-            margin-bottom: 50px;
+            margin-bottom: 50px;           
         }
         &__name input {
             width: 170px;
@@ -336,15 +338,11 @@
             .main-form__icon-email {
                 height: 60px;
             }
-        }
-        &__tel {
-            width: 320px;
-        }
+        }         
+        &__tel,
         &__email {
-            width: 320px;
-            margin-top: 0;
+            width: 320px;                      
         }
-
         &__block--4 {
             .central-block {
                 width: 85%;

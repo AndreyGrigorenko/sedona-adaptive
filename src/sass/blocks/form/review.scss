@@ -6,14 +6,20 @@
     .central-block {
         height: 200px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__img {
+        height: 26px;
         position: absolute;
         top: -26px;
         left: 0;
     }
+    &__img img {
+        height: 26px;        
+    }
     &__text-block {
-        margin: auto;
+        /* margin: auto; */
     }
     &__title {
         @include title-font();
@@ -36,19 +42,22 @@
         &__text {
             width: 450px;
         }
-        &__img {            
-            top: -57px;
-            width: 768px;
+        &__img {
+            height: 57px;            
+            top: -56px;            
             left: 50%;
             margin-left: -384px;           
+        }
+        &__img img {
+            height: 57px;            
+            width: 100%;           
         }
     }
 }
 
 @media (min-width: 1200px) {
     .review {       
-        &__img {            
-            width: 1200px;            
+        &__img {                       
             margin-left: -600px;           
         }
     }

@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/style.min.css" rel="stylesheet">
 		<title>form.html</title>
+		<script>
+			document.createElement( "picture" );
+			
+		</script>
 	</head>
 	<body>
 		<div class="main-central-block">
@@ -76,17 +80,19 @@
 							<section class="main-form__block main-form__block--1">
 								<div class="central-block">
 									<h2 class="main-form__title main-form__title--1">Представьтесь:</h2>
-									<div class="main-form__name">
-										<label for="name">ИМЯ*:</label>
-										<input id="name" type="text" name="main-form__name" placeholder="Ваше имя">
-									</div>
-									<div class="main-form__sur-name">
-										<label for="sur-name">ФАМИЛИЯ*:</label>
-										<input id="sur-name" type="text" name="main-form__sur-name" placeholder="Ваша фамилия">
-									</div>
-									<div class="main-form__second-name">
-										<label for="second-name">Отчество:</label>
-										<input id="second-name" type="text" name="main-form__second-name" placeholder="Ваше отчество">
+									<div class="main-form__flex-container">
+										<div class="main-form__name">
+											<label for="name">ИМЯ*:</label>
+											<input id="name" type="text" name="main-form__name" placeholder="Ваше имя">
+										</div>
+										<div class="main-form__sur-name">
+											<label for="sur-name">ФАМИЛИЯ*:</label>
+											<input id="sur-name" type="text" name="main-form__sur-name" placeholder="Ваша фамилия">
+										</div>
+										<div class="main-form__second-name">
+											<label for="second-name">Отчество:</label>
+											<input id="second-name" type="text" name="main-form__second-name" placeholder="Ваше отчество">
+										</div>
 									</div>
 								</div>
 							</section>
@@ -109,38 +115,42 @@
 						<section class="main-form__block main-form__block--3">
 							<div class="central-block">
 								<h2 class="main-form__title main-form__title--3">Вaше общее впечатление:</h2>
-								<div class="main-form__radio">
-									<input id="radio1" type="radio" name="main-form__radio" checked>
-									<label for="radio1">Скорее положительное</label>
-								</div>
-								<div class="main-form__radio">
-									<input id="radio2" type="radio" name="main-form__radio">
-									<label for="radio2">Скорее отрицательное</label>
-								</div>
-								<div class="main-form__radio">
-									<input id="radio3" type="radio" name="main-form__radio">
-									<label for="radio3">Затрудняюсь ответить</label>
+								<div class="main-form__flex-container">
+									<div class="main-form__radio">
+										<input id="radio1" type="radio" name="main-form__radio" checked>
+										<label for="radio1">Скорее положительное</label>
+									</div>
+									<div class="main-form__radio">
+										<input id="radio2" type="radio" name="main-form__radio">
+										<label for="radio2">Скорее отрицательное</label>
+									</div>
+									<div class="main-form__radio">
+										<input id="radio3" type="radio" name="main-form__radio">
+										<label for="radio3">Затрудняюсь ответить</label>
+									</div>
 								</div>
 							</div>
 						</section>
 						<section class="main-form__block main-form__block--4">
 							<div class="central-block">
 								<h2 class="main-form__title">Посещенные достопримечательности:</h2>
-								<div class="main-form__check">
-									<input id="check1" type="checkbox" name="main-form__check" checked>
-									<label for="check1">Мост Дьявола</label>
-								</div>
-								<div class="main-form__check">
-									<input id="check2" type="checkbox" name="main-form__check" checked>
-									<label for="check2">Слайд-парк</label>
-								</div>
-								<div class="main-form__check">
-									<input id="check3" type="checkbox" name="main-form__check">
-									<label for="check3">Гора-Колокол</label>
-								</div>
-								<div class="main-form__check">
-									<input id="check4" type="checkbox" name="main-form__check" checked>
-									<label for="check4">Красные скалы</label>
+								<div class="main-form__flex-container">
+									<div class="main-form__check">
+										<input id="check1" type="checkbox" name="main-form__check" checked>
+										<label for="check1">Мост Дьявола</label>
+									</div>
+									<div class="main-form__check">
+										<input id="check2" type="checkbox" name="main-form__check" checked>
+										<label for="check2">Слайд-парк</label>
+									</div>
+									<div class="main-form__check">
+										<input id="check3" type="checkbox" name="main-form__check">
+										<label for="check3">Гора-Колокол</label>
+									</div>
+									<div class="main-form__check">
+										<input id="check4" type="checkbox" name="main-form__check" checked>
+										<label for="check4">Красные скалы</label>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -183,6 +193,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="js/picturefill.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>

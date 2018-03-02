@@ -10,11 +10,18 @@
 		}						
 		.central-block {
 			height: 389px;
-			display: flex;					
+			display: flex;
+			/* justify-content: center;
+			align-items: center; */					
 		}		
 		&__text {			
 			width: 280px;
+			height: 215px;
 			margin: auto;
+		}
+		&__text img {			
+			width: 280px;
+			height: 215px;			
 		}
 	}	
 
@@ -33,6 +40,11 @@
 			height: 518px;					
 		}		
 		&__text {
+			height: 360px;
+			width: 460px;			
+		}
+		&__text img {
+			height: 360px;
 			width: 460px;			
 		}
 	}	

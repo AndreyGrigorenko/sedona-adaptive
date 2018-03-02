@@ -3,15 +3,16 @@ form.main-form(action="#" method="POST")
 		section.main-form__block.main-form__block--1
 			.central-block
 				h2.main-form__title.main-form__title--1 Представьтесь:
-				.main-form__name
-					label(for="name") ИМЯ*:
-					input(id="name" type="text" name="main-form__name" placeholder="Ваше имя")
-				.main-form__sur-name
-					label(for="sur-name") ФАМИЛИЯ*:
-					input(id="sur-name" type="text" name="main-form__sur-name" placeholder="Ваша фамилия")
-				.main-form__second-name
-					label(for="second-name") Отчество:
-					input(id="second-name" type="text" name="main-form__second-name" placeholder="Ваше отчество")
+				.main-form__flex-container
+					.main-form__name
+						label(for="name") ИМЯ*:
+						input(id="name" type="text" name="main-form__name" placeholder="Ваше имя")
+					.main-form__sur-name
+						label(for="sur-name") ФАМИЛИЯ*:
+						input(id="sur-name" type="text" name="main-form__sur-name" placeholder="Ваша фамилия")
+					.main-form__second-name
+						label(for="second-name") Отчество:
+						input(id="second-name" type="text" name="main-form__second-name" placeholder="Ваше отчество")
 
 	section.main-form__block.main-form__block--2
 		.central-block
@@ -30,31 +31,33 @@ form.main-form(action="#" method="POST")
 	section.main-form__block.main-form__block--3
 		.central-block
 			h2.main-form__title.main-form__title--3 Вaше общее впечатление:
-			.main-form__radio
-					input(id="radio1" type="radio" name="main-form__radio" checked)
-					label(for="radio1") Скорее положительное
-			.main-form__radio
-					input(id="radio2" type="radio" name="main-form__radio")
-					label(for="radio2") Скорее отрицательное
-			.main-form__radio
-					input(id="radio3" type="radio" name="main-form__radio")
-					label(for="radio3") Затрудняюсь ответить
+			.main-form__flex-container
+				.main-form__radio
+						input(id="radio1" type="radio" name="main-form__radio" checked)
+						label(for="radio1") Скорее положительное
+				.main-form__radio
+						input(id="radio2" type="radio" name="main-form__radio")
+						label(for="radio2") Скорее отрицательное
+				.main-form__radio
+						input(id="radio3" type="radio" name="main-form__radio")
+						label(for="radio3") Затрудняюсь ответить
 
 	section.main-form__block.main-form__block--4
 		.central-block
 			h2.main-form__title Посещенные достопримечательности:
-			.main-form__check
-					input(id="check1" type="checkbox" name="main-form__check" checked)
-					label(for="check1") Мост Дьявола
-			.main-form__check
-					input(id="check2" type="checkbox" name="main-form__check" checked)
-					label(for="check2") Слайд-парк
-			.main-form__check
-					input(id="check3" type="checkbox" name="main-form__check")
-					label(for="check3") Гора-Колокол
-			.main-form__check
-					input(id="check4" type="checkbox" name="main-form__check" checked)
-					label(for="check4") Красные скалы
+			.main-form__flex-container
+				.main-form__check
+						input(id="check1" type="checkbox" name="main-form__check" checked)
+						label(for="check1") Мост Дьявола
+				.main-form__check
+						input(id="check2" type="checkbox" name="main-form__check" checked)
+						label(for="check2") Слайд-парк
+				.main-form__check
+						input(id="check3" type="checkbox" name="main-form__check")
+						label(for="check3") Гора-Колокол
+				.main-form__check
+						input(id="check4" type="checkbox" name="main-form__check" checked)
+						label(for="check4") Красные скалы
 
 	section.main-form__block.main-form__block--5
 		.central-block

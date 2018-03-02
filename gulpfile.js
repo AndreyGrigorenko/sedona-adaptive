@@ -98,10 +98,11 @@ gulp.task('scripts', function() {
 gulp.task('copy', function() {
   return gulp.src([
     'src/fonts/**/*.{woff,woff2}',
-    'src/img/**'        
+    'src/img/**',
+    'src/js/*.js'        
   ], {
     base: 'src/'
-  })
+  })  
   .pipe(gulp.dest('dist'));
 });
 

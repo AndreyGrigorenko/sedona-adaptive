@@ -5,15 +5,21 @@
     border-bottom: 1px solid #E5E5E5;    
     .central-block {
         height: 190px;
-        display: flex;        
+        display: flex;
+        justify-content: center;
+        align-items: center;        
     }
     &__img {
+        height: 26px;        
         position: absolute;
         top: -26px;
         left: 0;
     }
+    &__img img {
+        height: 26px;       
+    }
     &__text-block {
-        margin: auto;
+        /* margin: auto; */
     }
     &__title {
         @include title-font();
@@ -35,11 +41,16 @@
             height: 220px;            
         }
         &__img {
+            height: 57px;
             top: -57px;
             width: 768px;
             left: 50%;
             margin-left: -384px;
-        }        
+        }
+        &__img img {
+            height: 57px;            
+            width: 768px;            
+        }         
         &__title {
             @include title-font4();
         }

@@ -17,6 +17,10 @@
         height: 40px;
         margin: auto;
     }
+    &__text img {
+        width: 230px;
+        height: 40px;       
+    }
 }
 
 @media (min-width: 768px) {
@@ -35,6 +39,12 @@
             display: flex;
         }
         &__text {
+            height: 80px;
+            width: 460px;
+            margin: auto;
+        }
+        &__text img {
+            height: 80px;
             width: 460px;
             margin: auto;
         }
