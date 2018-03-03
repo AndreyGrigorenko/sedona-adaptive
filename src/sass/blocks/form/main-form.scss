@@ -60,7 +60,7 @@
         margin-bottom: 15px;
     }
     &__tel input {
-        min-width: 220px;
+        width: 220px;
         height: 60px;
         border: none;
         flex-grow: 1;
@@ -72,8 +72,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 60px;
-        min-height: 60px;
+        width: 60px;
+        height: 60px;
         box-sizing: border-box;
         flex-shrink: 0;
         background: #E6E6E6;
@@ -85,7 +85,7 @@
         margin-top: 7px;
     }
     &__email input {
-        min-width: 220px;
+        width: 220px;
         height: 60px;
         border: none;
         flex-grow: 1;
@@ -94,8 +94,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 60px;
-        min-height: 60px;
+        width: 60px;
+        height: 60px;
         box-sizing: border-box;
         flex-shrink: 0;
         background: #E6E6E6;
