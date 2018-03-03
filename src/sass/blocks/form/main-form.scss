@@ -55,7 +55,7 @@
     }
     &__tel {
         display: flex;
-        width: 100%;
+        width: 280px;
         margin-top: 7px;
         margin-bottom: 15px;
     }
@@ -81,7 +81,7 @@
     }
     &__email {
         display: flex;
-        width: 100%;
+        width: 280px;
         margin-top: 7px;
     }
     &__email input {
@@ -275,7 +275,10 @@
             margin-top: 0;
             margin-bottom: 50px;             
         }
-
+        &__email,
+        &__tel {            
+            width: 100%;            
+        }
         &__block--3 {
             padding-top: 40px;
             .central-block {
