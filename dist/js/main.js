@@ -2,6 +2,7 @@
 
 ;(function () {
 	var menu = document.querySelector('.main-menu');
+	var links = document.querySelectorAll('.main-menu a');			
 	var menuClose = document.querySelector('.main-menu__close');
 	var menuOpen = document.querySelector('.main-header__burger');
 

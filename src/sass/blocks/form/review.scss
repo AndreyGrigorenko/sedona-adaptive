@@ -17,10 +17,7 @@
     }
     &__img img {
         height: 26px;        
-    }
-    &__text-block {
-        /* margin: auto; */
-    }
+    }    
     &__title {
         @include title-font();
         text-align: center;

@@ -1,12 +1,17 @@
+-
+	var items = [
+		{url: "index.html", name: "Главная", className:"main-menu__li"},
+		{url: "photo.html", name: "Фото и видео", className:"main-menu__li"},
+		{url: "form.html", name: "Форма отзыва", className:"main-menu__li main-menu__li--left"},
+		{url: "#", name: "HTML academy", className:"main-menu__li"}
+	]
+
 nav.main-menu
 	.main-menu__close
 		img(src="img/icon-cross.svg" alt="icon-cross")
 	ul
-		li
-			a(href="index.html") Главная		
-		li
-			a(href="photo.html") Фото и видео
-		li.main-menu__left
-			a(href="form.html") Форма отзыва
-		li
-			a(href="#") HTML academy
+		each item in items
+			mixin link(url, name, className)
+				li(class=`${className}`)
+					a(href=url)= name
+			+link(item.url, item.name, item.className)

@@ -45,14 +45,14 @@
         &__close {
             display: none;
         }
-        li {
+        &__li {
             display: inline-block;
             vertical-align: top;
             width: 20%;
             text-align: center;
             height: 70px;                      
         }
-        &__left {
+        &__li--left {
             margin-left: 20%;
         }
         a {           

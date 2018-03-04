@@ -41,10 +41,7 @@
             width: 33%;
             max-width: 420px;             
             flex-shrink: 0;
-        }
-        &__inner-block {
-            /* margin: auto; */            
-        }
+        }        
         &__title {
           @include title-font3();
           color: #ffffff;
