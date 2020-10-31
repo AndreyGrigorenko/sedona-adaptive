@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/style.min.css" rel="stylesheet">
+		<title>photo.html</title>
+		<script>
+			document.createElement( "picture" );
+			
+		</script>
+	</head>
+	<body>
+		<div class="main-central-block">
+			<header class="main-header">
+				<div class="main-header__burger"><img src="img/icon-menu.svg" alt="icon-menu"></div>
+				<div class="central-block">
+					<div class="main-header__logo"><a href="index.html">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+								<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"><img src="img/logo-sedona-mobile.svg" alt="logo">
+							</picture></a></div>
+					<nav class="main-menu">
+						<div class="main-menu__close"><img src="img/icon-cross.svg" alt="icon-cross"></div>
+						<ul>
+														<li class="main-menu__li"><a href="index.html">Главная</a></li>
+														<li class="main-menu__li"><a href="photo.html">Фото и видео</a></li>
+														<li class="main-menu__li main-menu__li--left"><a href="form.html">Форма отзыва</a></li>
+														<li class="main-menu__li"><a href="#">HTML academy</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<svg style="display:none">
+				<symbol id="icon-facebook" viewBox="0 0 8.672 18.944">
+					<path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"></path>
+				</symbol>
+				<symbol id="icon-twitter" viewBox="0 0 17.5 14.663">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"></path>
+				</symbol>
+				<symbol id="icon-youtube" viewBox="0 0 19.979 14.015">
+					<path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"></path>
+				</symbol>
+				<symbol id="logo-htmlacademy" viewBox="0 0 26.943 34.09">
+					<path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path>
+				</symbol>
+				<symbol id="icon-video-replay" viewBox="0 0 16 20">
+					<path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path>
+				</symbol>
+				<symbol id="icon-video-subtitles" viewBox="0 0 32 20">
+					<path d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 0 1 1.679-1.008 5.86 5.86 0 0 1 1.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 0 0-.902-.265A8.244 8.244 0 0 0 12.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 0 1 1.68-1.008 5.858 5.858 0 0 1 1.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 0 1 1.133.313l-.446 1.918a3.314 3.314 0 0 0-.901-.265A8.569 8.569 0 0 0 21.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"></path>
+				</symbol>
+				<symbol id="icon-video-fullscreen" viewBox="0 0 20 20">
+					<path d="M0 0v6h3V3h3V0H3zM3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zM17 17h-3v3h6v-6h-3z"></path>
+				</symbol>
+			</svg>
+			<div class="sedona-2">
+				<div class="central-block">
+					<div class="sedona-2__text"><img src="img/text-sedona.svg" alt="sedona"></div>
+				</div>
+			</div>
+			<div class="photo-video">
+				<picture>
+					<source media="(min-width:1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+					<source media="(min-width:768px)" srcset="img/bg-intro-triangle-tablet.svg"><img class="photo-video__img" src="img/bg-intro-triangle-mobile.svg" alt="bg-intro-triangle-mobile">
+				</picture>
+				<div class="central-block">
+					<section class="photo-video__text-block">
+						<h2 class="photo-video__title">Фото и видео</h2>
+						<p class="photo-video__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+					</section>
+				</div>
+			</div>
+			<div class="items-block">
+				<div class="items-block__central-block">
+					<article class="items">
+						<section class="items__item">
+							<div class="central-block">
+								<div class="items__img"><picture><source media="(min-width:1200px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x"><source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x"><img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="photo-1"></picture></div>
+								<div class="items__inner">
+									<div class="items__text-block">
+										<h3 class="items__title">Неродные просторы</h3>
+										<div class="items__text">Автор фото: Борис</div>
+									</div>
+									<div class="items__likes">
+										<div class="items__likes-img"><img src="img/icon-like.svg" alt="like"></div>
+										<div class="items__likes-number">1350</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="items__item">
+							<div class="central-block">
+								<div class="items__img"><picture><source media="(min-width:1200px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x"><source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x"><img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность"></picture></div>
+								<div class="items__inner">
+									<div class="items__text-block">
+										<h3 class="items__title">Местная растительность</h3>
+										<div class="items__text">Автор фото: Борис</div>
+									</div>
+									<div class="items__likes">
+										<div class="items__likes-img"><img src="img/icon-like.svg" alt="like"></div>
+										<div class="items__likes-number">143</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="items__item">
+							<div class="central-block">
+								<div class="items__img"><picture><source media="(min-width:1200px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x"><source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x"><img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север"></picture></div>
+								<div class="items__inner">
+									<div class="items__text-block">
+										<h3 class="items__title">Дорога на север</h3>
+										<div class="items__text">Автор фото: Петр</div>
+									</div>
+									<div class="items__likes">
+										<div class="items__likes-img"><img src="img/icon-like.svg" alt="like"></div>
+										<div class="items__likes-number">96</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="items__item">
+							<div class="central-block">
+								<div class="items__img"><picture><source media="(min-width:1200px)" srcset="img/photo-4-desktop@1x.jpg, img/photo-4-desktop@2x.jpg 2x"><source media="(min-width:768px)" srcset="img/photo-4-tablet@1x.jpg, img/photo-4-tablet@2x.jpg 2x"><img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дъявола"></picture></div>
+								<div class="items__inner">
+									<div class="items__text-block">
+										<h3 class="items__title">Мост дьявола</h3>
+										<div class="items__text">Автор фото: Антон</div>
+									</div>
+									<div class="items__likes">
+										<div class="items__likes-img"><img src="img/icon-like.svg" alt="like"></div>
+										<div class="items__likes-number">254</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</article>
+				</div>
+			</div>
+			<div class="video">
+				<section class="video__block">
+					<div class="video__text-block">
+						<div class="central-block">
+							<h2 class="video__title">Все еще сомневаетесь?</h2>
+							<p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+						</div>
+					</div>
+				</section>
+				<section class="video__img">
+					<picture>
+						<source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+						<source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x"><img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="video">
+					</picture>
+					<div class="video__nav">
+						<div class="video__nav1"></div>
+						<div class="video__nav2">
+							<div class="video__btn1">
+								<svg class="video__svg1">
+									<title>video-replay</title>
+									<use xlink:href="#icon-video-replay"></use>
+								</svg>
+							</div>
+							<div class="video__btn2">
+								<svg class="video__svg2">
+									<title>video-subtitles</title>
+									<use xlink:href="#icon-video-subtitles"></use>
+								</svg>
+							</div>
+							<div class="video__btn3">
+								<svg class="video__svg3">
+									<title>video-fullscreen</title>
+									<use xlink:href="#icon-video-fullscreen"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="main-footer">
+				<div class="central-block">
+					<section class="main-footer__visitsedona">#visitsedona</section>
+										<section class="socials"><a class="socials__link" href="#">
+												<svg class="socials__svg socials__svg--tw">
+													<title>twitter</title>
+													<use xlink:href="#icon-twitter"></use>
+												</svg></a><a class="socials__link" href="#">
+												<svg class="socials__svg socials__svg--tw">
+													<title>twitter</title>
+													<use xlink:href="#icon-facebook"></use>
+												</svg></a><a class="socials__link" href="#">
+												<svg class="socials__svg socials__svg--tw">
+													<title>twitter</title>
+													<use xlink:href="#icon-youtube"></use>
+												</svg></a>
+										</section>
+					<section class="html-academy">
+						<div class="html-academy__text">Разработано</div>
+						<svg class="html-academy__logo">
+							<title>html academy</title>
+							<use xlink:href="#logo-htmlacademy"></use>
+						</svg>
+					</section>
+				</div>
+			</footer>
+		</div>
+		<script src="js/picturefill.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

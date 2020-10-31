@@ -31,8 +31,8 @@ gulp.task('start', function(fn) { //Для разработки
  	'copy',
  	'images',
  	'symbols',
-    'server',
-    'watch',   
+  'server',
+  'watch',   
     fn
   );
 });

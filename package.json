@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/AndreyGrigorenko/sedona-adaptive.git"
   },
+  "dependencies": {
+    "graceful-fs": "4.2.2"
+  },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "browser-sync": "^2.23.6",
@@ -29,7 +32,5 @@
     "jshint": "^2.9.5",
     "run-sequence": "^2.2.1"
   },
-  "scripts": {
-    "start": "gulp start && gulp server"
-  }
+  "scripts": {}
 }
