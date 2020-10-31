@@ -24,7 +24,7 @@ var minify = require('gulp-csso');
 
 gulp.task('start', function(fn) { //Для разработки 
   run(
-  	'clean',
+  'clean',
  	'pug',
  	'sass',
  	'scripts',
@@ -39,7 +39,7 @@ gulp.task('start', function(fn) { //Для разработки
 
 gulp.task('build', function(fn) { //Для продакшина 
   run(
-  	'clean',
+  'clean',
  	'pug',
  	'sass',
  	'scripts',
